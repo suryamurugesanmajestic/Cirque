@@ -1,15 +1,22 @@
 package com.stepDefinition;
 
 import static org.testng.Assert.assertEquals;
+
 import java.awt.AWTException;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
 import com.cirqueBaseClass.BaseClass;
+
 import com.pomManager.PomManager;
 import com.runner.TestRunner;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,7 +30,7 @@ public class StepDefinition extends BaseClass {
 	static PomManager pom = new PomManager(driver);
 
 	@Given("User launch the URL {string}")
-	public void user_launch_the_url(String string) {
+	public void user_launch_the_url(String string) {	
 		getURL(string);
 		implicitlyWait(100);
 
@@ -145,12 +152,14 @@ public class StepDefinition extends BaseClass {
 	}
 
 	@Then("Employer navigated to Employer Dashboard page")
-	public void employer_navigated_to_employer_dashboard_page() throws InterruptedException {
+	public void employer_navigated_to_employer_dashboard_page() throws InterruptedException, IOException {
 		getTitle();
 		Thread.sleep(2000);
 		String currentURL = getCurrentURL();
 		if (currentURL.equals("https://cirque.sgssys.info/dashboard")) {
 			System.out.println("User Landed on the Dashboard Page");
+			Thread.sleep(2000);
+			takesScreenshot("dashboard");
 			Thread.sleep(2000);
 			click(pom.getAccountManagerMenu().getAccountManager());
 		} else {
@@ -174,11 +183,12 @@ public class StepDefinition extends BaseClass {
 	}
 
 	@When("User click the Add Account Manager button")
-	public void user_click_the_add_account_manager_button() throws InterruptedException {
+	public void user_click_the_add_account_manager_button() throws InterruptedException{
 		webDriverWait(40, "invisible", pom.getLogin().getLoader());
 		webDriverWait(30, "visible", pom.getAccountManagerMenu().getAddButton());
 		Thread.sleep(4000);
 		click(pom.getAccountManagerMenu().getAddButton());
+		
 	}
 
 	@When("User enter input into the Last and First Name fields")
@@ -234,9 +244,10 @@ public class StepDefinition extends BaseClass {
 	}
 
 	@When("Enter the Account Manager details")
-	public void enter_the_account_manager_details() throws InterruptedException {
+	public void enter_the_account_manager_details() throws InterruptedException, IOException {
 		Thread.sleep(2000);
 		user_click_the_add_account_manager_button();
+		takesScreenshot("addAccountManagerPopup");
 		user_enter_input_into_the_last_and_first_name_fields();
 		user_enter_input_into_the_phone_number_and_email_address_fields();
 		user_choose_the_commission_type();
@@ -252,8 +263,9 @@ public class StepDefinition extends BaseClass {
 
 	@When("Download the Excel and PDF files")
 	public void download_the_excel_and_pdf_files() throws InterruptedException {
-		webDriverWait(30, "visible", pom.getAccountManagerMenu().getPdfDownload());
+		navigateRefresh();
 		Thread.sleep(3000);
+		webDriverWait(30, "visible", pom.getAccountManagerMenu().getPdfDownload());
 		click(pom.getAccountManagerMenu().getPdfDownload());
 		webDriverWait(30, "visible", pom.getAccountManagerMenu().getExcelDownload());
 		Thread.sleep(2000);
@@ -300,11 +312,12 @@ public class StepDefinition extends BaseClass {
 		webDriverWait(30, "visible", pom.getAccountManagerMenu().getEditAccountManager());
 		click(pom.getAccountManagerMenu().getEditAccountManager());
 		System.out.println("clicked edit Icon");
+		
 
 	}
 
 	@When("User Click the close Icon to getting the Confirmation popup")
-	public void user_click_the_close_icon_to_getting_the_confirmation_popup() throws InterruptedException {
+	public void user_click_the_close_icon_to_getting_the_confirmation_popup() throws InterruptedException, IOException {
 		actions("click", pom.getAccountManagerMenu().getPopupCloseIcon());
 		Thread.sleep(3000);
 		click(pom.getAccountManagerMenu().getPopupNoButton());
@@ -312,6 +325,7 @@ public class StepDefinition extends BaseClass {
 		Thread.sleep(3000);
 		click(pom.getAccountManagerMenu().getPopupYesButton());
 		user_click_the_edit_the_account_manager_details();
+		takesScreenshot("EditAccountManager");
 
 	}
 
@@ -559,8 +573,9 @@ public class StepDefinition extends BaseClass {
 	}
 
 	@When("User again Enter the Service Location details")
-	public void user_again_enter_the_service_location_details() throws InterruptedException, AWTException {
+	public void user_again_enter_the_service_location_details() throws InterruptedException, AWTException, IOException {
 		user_click_the_add_new_service_location_button();
+		takesScreenshot("addServiceLoction");
 		user_enter_location_input_into_location_name_field();
 		user_enter_the_location_address1_and_address2();
 		user_enter_the_input_into_city_field();
@@ -618,7 +633,9 @@ public class StepDefinition extends BaseClass {
 
 	@When("User again Click Edit icon to change the Service Location informations")
 	public void user_again_click_edit_icon_to_change_the_service_location_informations()
-			throws InterruptedException, AWTException {
+			throws InterruptedException, AWTException, IOException {
+		Thread.sleep(2000);
+		takesScreenshot("editServiceLocation");
 		Thread.sleep(2000);
 		clear(pom.getServiceLocation().getLocationAddress1());
 		Thread.sleep(2000);
@@ -1311,7 +1328,7 @@ public class StepDefinition extends BaseClass {
 	@Then("Patient should navigate to Patient Registration Page")
 	public void patient_should_navigate_to_patient_registration_page() throws InterruptedException {
 		String actualUrl = getCurrentURL();
-		String expectedUrl = "https://cirque.sgssys.info/patientverify?patient";
+		String expectedUrl = "https://cirque.sgssys.info/PatientRegistration";
 		if (actualUrl.contains(expectedUrl)) {
 			System.out.println("User was navigated to Patient Registration Page");
 			Thread.sleep(3000);
@@ -1331,9 +1348,7 @@ public class StepDefinition extends BaseClass {
 		} else {
 			System.out.println("Patient SSN field is not thrown validation message");
 		}
-
 		randomAlphabetics(pom.getPatientRegistration().getMailingAddress1(), 4);
-
 	}
 
 	@When("Patient entering city and Select state from the dropdown")

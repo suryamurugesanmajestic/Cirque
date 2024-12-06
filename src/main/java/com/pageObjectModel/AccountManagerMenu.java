@@ -75,7 +75,7 @@ public class AccountManagerMenu {
 	@FindBy(xpath="//*[@id=\"main-wrapper\"]/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[2]/div/input")
 	private WebElement searchWithFirstName;
 	
-	@FindBy(xpath="/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[3]/div/input")
+	@FindBy(xpath="(//input[@class='form-control input-search'])[3]")
 	private WebElement searchWithPhone;
 	
 	@FindBy(xpath="/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input")

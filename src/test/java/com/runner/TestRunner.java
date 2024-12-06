@@ -14,8 +14,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "C:\\Users\\surya\\eclipse-workspace\\Cirque\\src\\test\\java\\com\\featureFile\\Cirque.feature",
 glue ="com.stepDefinition",
 dryRun = !true,
-monochrome = true,
-plugin = {"pretty",
+monochrome = !true,
+plugin = {
+		"pretty",
 		"html:Reports/Cirque.html",
 		"json:Reports/Cirque.html",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }
@@ -35,7 +36,7 @@ public class TestRunner extends BaseClass {
 	
 	@AfterClass
 	public static void tearDown() {
-		//close();
+		close();
 	}
 		
 }

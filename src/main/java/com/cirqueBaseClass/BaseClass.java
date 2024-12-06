@@ -77,7 +77,12 @@ public class BaseClass {
 	
 	// GetURL Method
 	public static void getURL(String URL) {
+		long startTime = System.nanoTime();
 		driver.get(URL);
+		long endTime = System.nanoTime();
+		long loadTime = (endTime - startTime)/ 10000000;
+		System.err.println("Page load time: " + loadTime + " milliseconds");
+		
 	}
 
 	// GetTitle Method
@@ -185,7 +190,7 @@ public class BaseClass {
 	// getting text from the application
 	public static String getText(WebElement refName) {
 		String text = refName.getText();
-		System.out.println("Getted value "+ text );
+		System.out.println("Getted text value => "+ text );
 		return text;
 	}
 	
@@ -380,7 +385,7 @@ public class BaseClass {
 	public static void takesScreenshot(String name) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("C:\\Users\\surya\\eclipse-workspace\\WOTC_Project\\"+name+".PNG");
+		File dest = new File("C:\\Users\\surya\\eclipse-workspace\\Cirque\\test-output\\"+name+".PNG");
 		FileUtils.copyFile(src, dest);
 	}
 	
@@ -396,7 +401,7 @@ public class BaseClass {
 		List<String> listWindow = new ArrayList<String>(windowHandles);
 		System.out.println("ALL window URL --> \n"+listWindow);
 		driver.switchTo().window(listWindow.get(value));
-		System.out.println("Current URL ---> /n"+driver.getCurrentUrl());
+		System.out.println("Currently driver navigated URL ---> /n"+driver.getCurrentUrl());
 		
 	}
 	// OTP entering method
@@ -476,7 +481,7 @@ public class BaseClass {
 	    	Robot robot = new Robot();
 	    	if(option.equalsIgnoreCase("Enter")) {
 	    		robot.keyPress(KeyEvent.VK_ENTER);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(1500);
 	    		robot.keyRelease(KeyEvent.VK_ENTER);
 	    	}else if(option.equalsIgnoreCase("doubleDown")) {
 	    		robot.keyPress((KeyEvent.VK_DOWN));
