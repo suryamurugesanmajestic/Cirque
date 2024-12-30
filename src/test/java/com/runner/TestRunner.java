@@ -18,7 +18,7 @@ monochrome = !true,
 plugin = {
 		"pretty",
 		"html:Reports/Cirque.html",
-		"json:Reports/Cirque.html",
+		"json:Reports/Cirque.json",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }
 
 //, tags = "not @Add"
@@ -31,7 +31,7 @@ public class TestRunner extends BaseClass {
 	
 	@BeforeClass
 	public static void open() {
-	     driver = browserLaunch("chrome");
+	     driver = browserLaunch("Chrome");
 	}
 	
 	@AfterClass

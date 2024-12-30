@@ -80,7 +80,7 @@ When User click the Edit button from the provider Grid list
 And User again Click Edit icon to change the Provider informations
 Then User Update the Provider Details
 
-@Add
+
 Scenario: User can able to send Patient Registration Invite Link in Manage Patient Menu
 Given User click the Manage Patients Menu to redirected to manage patient page
 And User click the Add Manager patients button
@@ -96,7 +96,7 @@ And User Close the Add Patient Popup
 And User Click the Share Link button
 Then User Check the Invite has been received to Patient email address
 
-@Add
+
 Scenario: Patient was Login into Patient Registration Portal
 Given Patient Click the Registration Invite Link
 And Patient Enter the Last Name into LastName field
@@ -104,7 +104,7 @@ And Patient Enter the DOB into DOB field
 And Patient click to verify button
 Then Patient should navigate to Patient Registration Page 
 
-@Add
+
 Scenario: Patient was entering the Patient Information details
 Given patient entering patient SSN and Address
 When Patient entering city and Select state from the dropdown
@@ -124,7 +124,7 @@ And User Enter payment card details
 And User click the Pay button
 Then Patient should navigate the Payment Status page
 
-@Add
+
 Scenario: Admin Login the Application to verify the Patient payment transaction was successed
 Given User navigated to Manage payment Menu
 When User click the Manage Payment Menu
@@ -136,7 +136,7 @@ And User flitering the data by using Quick search options
 And User Click the Payment receipt download icon
 Then User Exporting the payment lists to Excel and PDF file
 
-@Add
+
 Scenario: User Check the Patient Census Lists in Census List Menu
 Given User click Census List Menu to redirected to Census List Page
 When User flitering the Pending Census data by using Quick search options

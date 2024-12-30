@@ -162,10 +162,10 @@ public class PatientRegistration {
 	@FindBy(xpath="(//p[@role=\"alert\"])[2]")
 	private WebElement expiryValidation;
 	
-	@FindBy(xpath="(//p[@role=\"alert\"])[3]")
+	@FindBy(xpath="//p[.='Your card’s security code is incomplete.']")
 	private WebElement cvcValidation;
 	
-	@FindBy(xpath="(//p[@role=\"alert\"])[4]")
+	@FindBy(xpath="//p[.='Your ZIP is invalid.']")
 	private WebElement cardZipcodeValidation;
 	
 	@FindBy(xpath="(//button[@type=\"button\"])[1]")

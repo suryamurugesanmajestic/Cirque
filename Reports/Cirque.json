@@ -1,0 +1,1641 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-12-30T10:01:10.999Z",
+        "line": 3,
+        "name": "User was login into the Application",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-was-login-into-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6252115400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launch the URL \"https://cirque.sgssys.info/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://cirque.sgssys.info/login\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.stepDefinition.StepDefinition.user_launch_the_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7993100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify the User has been navigated to Application login page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.verify_the_user_has_been_navigated_to_application_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6436510700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter the Username name into Username field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_username_name_into_username_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21383238600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter Invalid Username and Valid Password",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.enter_invalid_username_and_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17209200000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter Valid Username and Invalid Password",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.enter_valid_username_and_invalid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82119800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on the login Button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6548255800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Employer navigated to Employer Dashboard page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.employer_navigated_to_employer_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:02:09.149Z",
+        "line": 13,
+        "name": "User Navigated to Account Manager Menu and Add New Account Manager",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-navigated-to-account-manager-menu-and-add-new-account-manager",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7995800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Click the Account Manager Menu",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_account_manager_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4271363800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click the Add Account Manager button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_add_account_manager_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5552312600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter input into the Last and First Name fields",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_input_into_the_last_and_first_name_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5645042800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter input into the Phone Number and Email address fields",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_input_into_the_phone_number_and_email_address_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19004264100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User Choose the Commission Type",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_choose_the_commission_type()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4405750500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Click the close Icon to get the Confirmation Popup",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_close_icon_to_get_the_confirmation_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39655742800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Enter the Account Manager details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.enter_the_account_manager_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228144300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click the Add button to create the Account Manager",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.click_the_add_button_to_create_the_account_manager()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:03:27.947Z",
+        "line": 24,
+        "name": "Edit Account Manager Information",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;edit-account-manager-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7377555000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Download the Excel and PDF files",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.download_the_excel_and_pdf_files()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input\"}\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 8bd64a4e265aa04c5943da32b2f1f15c\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid(StepDefinition.java:283)\r\n\tat ✽.Search the added Account Manager listed in the resultant Grid(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:26)\r\n",
+              "duration": 62712574100,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "Search the added Account Manager listed in the resultant Grid",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "User click the Edit the Account Manager Details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_edit_the_account_manager_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User Click the close Icon to getting the Confirmation popup",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_close_icon_to_getting_the_confirmation_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User again Click Edit icon to change the Account Manager informations",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_account_manager_informations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User Update the Account Manager Details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_update_the_account_manager_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:04:38.106Z",
+        "line": 33,
+        "name": "User Navigated to Service Location Menu and Add Service Location",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-navigated-to-service-location-menu-and-add-service-location",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [https://cirque.sgssys.info/ServiceLocation] but found [https://cirque.sgssys.info/ManageAccountManager]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.stepDefinition.StepDefinition.user_click_the_service_location_menu(StepDefinition.java:366)\r\n\tat ✽.User click the Service Location Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:34)\r\n",
+              "duration": 20987600,
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "User click the Service Location Menu",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_service_location_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User click the Add New Service Location button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_add_new_service_location_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000500,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "User enter location input into Location Name field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_location_input_into_location_name_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "User enter the Location Address1 and Address2",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_location_address1_and_address2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "User enter the input into City field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_input_into_city_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "User Select the value from State dropdown",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_value_from_state_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "User enter the input into zip code and Phone number fields",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_input_into_zip_code_and_phone_number_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "User enter the input into email and Website URL fields",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_input_into_email_and_website_url_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "User select the Account Manager and Procedures value from the dropdown",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_account_manager_and_procedures_value_from_the_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "User choose the Service logo",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_choose_the_service_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "User Click to close the Add Service location popup",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_to_close_the_add_service_location_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User again Enter the Service Location details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_again_enter_the_service_location_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "Click the Add button to create the Service Location",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.click_the_add_button_to_create_the_service_location()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:04:38.156Z",
+        "line": 49,
+        "name": "Edit Service Location Information in Service Location Menu",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;edit-service-location-information-in-service-location-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4236084400,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Download the service location Excel and PDF files",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.download_the_service_location_excel_and_pdf_files()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"main-wrapper\"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i\"}\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 8bd64a4e265aa04c5943da32b2f1f15c\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"main-wrapper\"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details(StepDefinition.java:622)\r\n\tat ✽.User click the Edit the Service Location Details(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:51)\r\n",
+              "duration": 70121886500,
+              "status": "failed"
+            },
+            "line": 51,
+            "name": "User click the Edit the Service Location Details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "User again Click Edit icon to change the Service Location informations",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_service_location_informations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User Update the Service Location Details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_update_the_service_location_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:05:52.529Z",
+        "line": 56,
+        "name": "User can able to assign the form to service location in Manage Form Menu",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-can-able-to-assign-the-form-to-service-location-in-manage-form-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7141533900,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User Click to navigate Manage Form menu",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_to_navigate_manage_form_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21468948500,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User click View Icon to view the Forms",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_view_icon_to_view_the_forms()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32109312800,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "User click to Edit the Forms",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_to_edit_the_forms()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57270334100,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "User Assign the Service Location",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_assign_the_service_location()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21432494500,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User Update the assigned service Location",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_update_the_assigned_service_location()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:08:11.973Z",
+        "line": 64,
+        "name": "User Can add new provider in Manage Providers Menu",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-can-add-new-provider-in-manage-providers-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14512084600,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User Click to navigate Manage Providers menu",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_to_navigate_manage_providers_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2114872900,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "User click the Add Manager Providers button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_add_manager_providers_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8419571300,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "User enter the provider Last Name and First Name",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_provider_last_name_and_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4220474300,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "User select the provider suffix from the dropdown field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_provider_suffix_from_the_dropdown_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10353096000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User enter the provider Phone Number and Email address",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_provider_phone_number_and_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9173264000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User select the provider State from the dropdown field.",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_provider_state_from_the_dropdown_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4324022000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "User enter the provider Medical License Number and NPI number",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_provider_medical_license_number_and_npi_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17828590600,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User provider mapping the Account Manager from the dropdown field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_provider_mapping_the_account_manager_from_the_dropdown_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9468621500,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "User check the Cancel Confirmation popup is displayed",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_check_the_cancel_confirmation_popup_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59910131700,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user Add the New Provider account",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_add_the_new_provider_account()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:10:32.323Z",
+        "line": 77,
+        "name": "Edit Provider Information in Manage Providers Menu",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;edit-provider-information-in-manage-providers-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8349191300,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "Download to Export Providers List to Excel and PDF files",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23399710700,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User click the Edit button from the provider Grid list",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.User_click_the_Edit_button_from_the_provider_Grid_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44315413300,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "User again Click Edit icon to change the Provider informations",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_provider_informations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2089150500,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "User Update the Provider Details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_update_the_provider_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Add"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:11:50.513Z",
+        "line": 84,
+        "name": "User can able to send Patient Registration Invite Link in Manage Patient Menu",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-can-able-to-send-patient-registration-invite-link-in-manage-patient-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4451853800,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "User click the Manage Patients Menu to redirected to manage patient page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_manage_patients_menu_to_redirected_to_manage_patient_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2180616900,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "User click the Add Manager patients button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_add_manager_patients_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6686135800,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "User select the Service Location Name from the dropdown field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_service_location_name_from_the_dropdown_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5149926900,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "User select the Provider Name from the dropdown field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_provider_name_from_the_dropdown_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5149849000,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "User select the Account Manager Name from the dropdown field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_account_manager_name_from_the_dropdown_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3606028800,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "User enter the Patient Last Name and First Name",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_patient_last_name_and_first_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3141915300,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "User select the Patient DOB from the Date picker",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_patient_dob_from_the_date_picker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10776034100,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "User enter the Patient Phone Number and Email Address",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_the_patient_phone_number_and_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3162838100,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "User select the Procedure Name from the dropdown field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_procedure_name_from_the_dropdown_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2163579100,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "User Select the invite sharing Preference",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_select_the_invite_sharing_preference()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10594765100,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "User Close the Add Patient Popup",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_close_the_add_patient_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50451082900,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "User Click the Share Link button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_share_link_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2044524700,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "User Check the Invite has been received to Patient email address",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_check_the_invite_has_been_received_to_patient_email_address()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:13:40.094Z",
+        "line": 100,
+        "name": "Patient was Login into Patient Registration Portal",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;patient-was-login-into-patient-registration-portal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27618997200,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Patient Click the Registration Invite Link",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_click_the_registration_invite_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11985203300,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "Patient Enter the Last Name into LastName field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_enter_the_last_name_into_last_name_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7337842900,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "Patient Enter the DOB into DOB field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_enter_the_dob_into_dob_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2106747800,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "Patient click to verify button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_click_to_verify_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3008325700,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "Patient should navigate to Patient Registration Page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_should_navigate_to_patient_registration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:14:32.192Z",
+        "line": 108,
+        "name": "Patient was entering the Patient Information details",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;patient-was-entering-the-patient-information-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4449118700,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "patient entering patient SSN and Address",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_entering_patient_ssn_and_address()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5295388400,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "Patient entering city and Select state from the dropdown",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_entering_city_and_select_state_from_the_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4414039400,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "Patient entering Zipcode and Modify the Phone and Email",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_entering_zipcode_and_modify_the_phone_and_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19928980500,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "Select is patient a minor radio button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.select_is_patient_a_minor_radio_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10488238100,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "Patient click the same As checkbox  and unchecked up the sameAs checkbox",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_click_the_same_as_checkbox_and_unchecked_up_the_same_as_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28917830700,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "Patient entering Parent or Legal Guardian information",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_entering_parent_or_legal_guardian_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10614471800,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "Patient select the insurance information radio button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_select_the_insurance_information_radio_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7740266300,
+              "status": "passed"
+            },
+            "line": 116,
+            "name": "Entering Patient Insurance information details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.entering_patient_insurance_information_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2605227100,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "User checkedUp the confirm this information is accurate checkbox",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_checked_up_the_confirm_this_information_is_accurate_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 889414700,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "patient entering digital signature",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_entering_digital_signature()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3117068700,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "Patient moved to next form tab by clicking the next button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_moved_to_next_form_tab_by_clicking_the_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3932039500,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "User Entering the Digital signature",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_entering_the_digital_signature()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6235761700,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "Click the Prev button to check the Patient Informations",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.click_the_prev_button_to_check_the_patient_informations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3132384000,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "Click the Proceed to Pay to redirected to payment Page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.click_the_proceed_to_pay_to_redirected_to_payment_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20916820200,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "User Enter payment card details",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_enter_payment_card_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4305367000,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "User click the Pay button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_pay_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25096422700,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "Patient should navigate the Payment Status page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.patient_should_navigate_the_payment_status_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:17:14.306Z",
+        "line": 128,
+        "name": "Admin Login the Application to verify the Patient payment transaction was successed",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;admin-login-the-application-to-verify-the-patient-payment-transaction-was-successed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1635304800,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "User navigated to Manage payment Menu",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_navigated_to_manage_payment_menu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32982300,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "User click the Manage Payment Menu",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_manage_payment_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10490574300,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "User pick the From date and To date from the Date Picker",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_pick_the_from_date_and_to_date_from_the_date_picker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7368280200,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "User filtering the Payment list by using Date Range filter",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_filtering_the_payment_list_by_using_date_range_filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16614916900,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "User Click the Search button to filter the data",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_search_button_to_filter_the_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24078379200,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "User Click the Reset button to get all the datas",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_reset_button_to_get_all_the_datas()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57289728300,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "User flitering the data by using Quick search options",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_flitering_the_data_by_using_quick_search_options()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2130217400,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "User Click the Payment receipt download icon",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_payment_receipt_download_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4513680500,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "User Exporting the payment lists to Excel and PDF file",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_exporting_the_payment_lists_to_excel_and_pdf_file()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:19:18.469Z",
+        "line": 140,
+        "name": "User Check the Patient Census Lists in Census List Menu",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-check-the-patient-census-lists-in-census-list-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5185921200,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "User click Census List Menu to redirected to Census List Page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_census_list_menu_to_redirected_to_census_list_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33412085100,
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "User flitering the Pending Census data by using Quick search options",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_flitering_the_pending_census_data_by_using_quick_search_options()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6740766700,
+              "status": "passed"
+            },
+            "line": 143,
+            "name": "User click the Edit Status icon in the Grid list",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_the_edit_status_icon_in_the_grid_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4356742500,
+              "status": "passed"
+            },
+            "line": 144,
+            "name": "User change the Patient Status From the dropdown",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_change_the_patient_status_from_the_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5021909300,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "User click Update button to change the Patient Status",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_update_button_to_change_the_patient_status()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2168792900,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "User check the Changed Patient data moved to completed Grid list",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_check_the_changed_patient_data_moved_to_completed_grid_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34947113800,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "User flitering the Completed Census data by using Quick search options",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_flitering_the_completed_census_data_by_using_quick_search_options()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12607967600,
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "User Exporting the Census lists to Excel and PDF file",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_exporting_the_census_lists_to_excel_and_pdf_file()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-30T10:21:02.923Z",
+        "line": 150,
+        "name": "User can change the Password by themselves",
+        "description": "",
+        "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process;user-can-change-the-password-by-themselves",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5169482700,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "User click Settings menu to redirected to Change Password Page",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_settings_menu_to_redirected_to_change_password_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11750588200,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "User click entering Old Password into Old Password field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_click_entering_old_password_into_old_password_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9556405600,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "User entering the New Password into New Password Field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_entering_the_new_password_into_new_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9433127000,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "User entering the Confirm New Password into Confirm New Password Field",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_entering_the_confirm_new_password_into_confirm_new_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5335367700,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "User check the New and Confirm New Password field with invalid input",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_check_the_new_and_confirm_new_password_field_with_invalid_input()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6212907400,
+              "status": "passed"
+            },
+            "line": 156,
+            "name": "User check the New and Confirm New Password field with valid input",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_check_the_new_and_confirm_new_password_field_with_valid_input()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16148461500,
+              "status": "passed"
+            },
+            "line": 157,
+            "name": "User check the Confirmation Popup is presented",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_check_the_confirmation_popup_is_presented()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24981700,
+              "status": "passed"
+            },
+            "line": 158,
+            "name": "User check the successfully logged out from the Application after click the ok button",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_check_the_successfully_logged_out_from_the_application_after_click_the_ok_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7856615500,
+              "status": "passed"
+            },
+            "line": 159,
+            "name": "User verify the Login with old password",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_verify_the_login_with_old_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11416356800,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "User verify the login with newly changed Password",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_verify_the_login_with_newly_changed_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13389251000,
+              "status": "passed"
+            },
+            "line": 161,
+            "name": "User should be logged in to Application",
+            "match": {
+              "location": "com.stepDefinition.StepDefinition.user_should_be_logged_in_to_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Cirque Healthcare! Application it has managing the patients treatment process",
+    "description": "",
+    "id": "cirque-healthcare--application-it-has-managing-the-patients-treatment-process",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/featureFile/Cirque.feature",
+    "tags": []
+  }
+]

@@ -1,22 +1,16 @@
 package com.stepDefinition;
 
 import static org.testng.Assert.assertEquals;
-
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import com.cirqueBaseClass.BaseClass;
-
 import com.pomManager.PomManager;
 import com.runner.TestRunner;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,7 +26,7 @@ public class StepDefinition extends BaseClass {
 	@Given("User launch the URL {string}")
 	public void user_launch_the_url(String string) {	
 		getURL(string);
-		implicitlyWait(100);
+		implicitlyWait(50);
 
 	}
 
@@ -67,16 +61,13 @@ public class StepDefinition extends BaseClass {
 			} else {
 				System.err.println("Password validation is not displayed");
 			}
-
 		} else {
 			System.err.println("Email field validation is not displayed");
 		}
-
 		sendKeys(pom.getLogin().getUsername(), "superadmin@cirque.com");
 		Thread.sleep(3000);
 		click_on_the_login_button();
 		assertEquals("https://cirque.sgssys.info/login", getCurrentURL());
-
 	}
 
 	@When("Enter Invalid Username and Valid Password")
@@ -157,7 +148,7 @@ public class StepDefinition extends BaseClass {
 		Thread.sleep(2000);
 		String currentURL = getCurrentURL();
 		if (currentURL.equals("https://cirque.sgssys.info/dashboard")) {
-			System.out.println("User Landed on the Dashboard Page");
+			System.out.println("User logged into landed on the Dashboard Page");
 			Thread.sleep(2000);
 			takesScreenshot("dashboard");
 			Thread.sleep(2000);
@@ -241,6 +232,7 @@ public class StepDefinition extends BaseClass {
 		actions("click", pom.getAccountManagerMenu().getPopupCloseIcon());
 		Thread.sleep(2000);
 		click(pom.getAccountManagerMenu().getPopupYesButton());
+		System.out.println("Add Account Manager Popup closed");
 	}
 
 	@When("Enter the Account Manager details")
@@ -259,6 +251,7 @@ public class StepDefinition extends BaseClass {
 	@When("Click the Add button to create the Account Manager")
 	public void click_the_add_button_to_create_the_account_manager() {
 		actions("click", pom.getAccountManagerMenu().getAddAccountManager());
+		System.out.println("Account Manager Successfully Added");
 	}
 
 	@When("Download the Excel and PDF files")
@@ -359,6 +352,7 @@ public class StepDefinition extends BaseClass {
 	@Then("User Update the Account Manager Details")
 	public void user_update_the_account_manager_details() throws InterruptedException {
 		click(pom.getAccountManagerMenu().getUpdateAccountManager());
+		System.out.println("Account Manager successfully Updated");
 		Thread.sleep(3000);
 		webDriverWait(30, "visible", pom.getServiceLocation().getServiceLocationMenu());
 		click(pom.getServiceLocation().getServiceLocationMenu());
@@ -592,6 +586,7 @@ public class StepDefinition extends BaseClass {
 	@When("Click the Add button to create the Service Location")
 	public void click_the_add_button_to_create_the_service_location() {
 		click(pom.getServiceLocation().getAddServiceLocation());
+		System.out.println("New Service Location successfully Added");
 	}
 
 	@When("Download the service location Excel and PDF files")
@@ -636,6 +631,7 @@ public class StepDefinition extends BaseClass {
 			throws InterruptedException, AWTException, IOException {
 		Thread.sleep(2000);
 		takesScreenshot("editServiceLocation");
+		
 		Thread.sleep(2000);
 		clear(pom.getServiceLocation().getLocationAddress1());
 		Thread.sleep(2000);
@@ -678,6 +674,7 @@ public class StepDefinition extends BaseClass {
 	@Then("User Update the Service Location Details")
 	public void user_update_the_service_location_details() {
 		click(pom.getServiceLocation().getUpdateServiceLocation());
+		System.out.println("Service Location successfully Updated");
 	}
 
 	@Given("User Click to navigate Manage Form menu")
@@ -697,21 +694,28 @@ public class StepDefinition extends BaseClass {
 			System.err.println("User doesn't navigated to Manage Forms Page");
 		}
 		navigateRefresh();
+		
 
 	}
 
 	@When("User click View Icon to view the Forms")
-	public void user_click_view_icon_to_view_the_forms() throws InterruptedException {
+	public void user_click_view_icon_to_view_the_forms() throws InterruptedException, IOException {
 		Thread.sleep(2000);
 		click(pom.getManageForms().getStandardFormView());
+		Thread.sleep(2000);
+		takesScreenshot("standardForm");
 		Thread.sleep(2000);
 		click(pom.getManageForms().getPopupCloseIcon());
 		Thread.sleep(2000);
 		click(pom.getManageForms().getFaithFormView());
 		Thread.sleep(2000);
+		takesScreenshot("goodFaithForm");
+		Thread.sleep(2000);
 		click(pom.getManageForms().getPopupCloseIcon());
 		Thread.sleep(2000);
 		click(pom.getManageForms().getAdvanceFormView());
+		Thread.sleep(2000);
+		takesScreenshot("AdvanceForm");
 		Thread.sleep(2000);
 		click(pom.getManageForms().getPopupCloseIcon());
 		Thread.sleep(2000);
@@ -792,6 +796,7 @@ public class StepDefinition extends BaseClass {
 		click(pom.getManageForms().getStandardFormAssign());
 		Thread.sleep(3000);
 		click(pom.getManageForms().getAssignButton());
+		System.out.println("Standard Form is successfully Updated");
 		Thread.sleep(3000);
 
 		click(pom.getManageForms().getFaithFormAssign());
@@ -818,6 +823,7 @@ public class StepDefinition extends BaseClass {
 	@When("User Update the assigned service Location")
 	public void user_update_the_assigned_service_location() throws InterruptedException, AWTException {
 		click(pom.getManageForms().getAdvanceFormAssign());
+		System.out.println("Advance Form is successfully Updated");
 		Thread.sleep(2000);
 		webDriverWait(50, "clickable", pom.getManageForms().getServiceLocation());
 		actions("moveToElement", pom.getManageForms().getServiceLocation());
@@ -837,6 +843,7 @@ public class StepDefinition extends BaseClass {
 		click(pom.getManageForms().getAdvanceFormAssign());
 		Thread.sleep(2000);
 		click(pom.getManageForms().getAssignButton());
+		System.out.println("Good Faith form is successfully Updated");
 
 	}
 
@@ -851,7 +858,7 @@ public class StepDefinition extends BaseClass {
 		String expectedUrl = "https://cirque.sgssys.info/ManageProviders";
 		assertEquals(actualUrl, expectedUrl);
 		if (actualUrl.equals("https://cirque.sgssys.info/ManageProviders")) {
-			System.out.println("User was navigated to Manage Providers Page");
+			System.out.println("User was navigated into Manage Providers Page");
 			Thread.sleep(3000);
 
 		} else {
@@ -974,12 +981,15 @@ public class StepDefinition extends BaseClass {
 		click(pom.getManageProvider().getPopupCloseIcon());
 		Thread.sleep(2000);
 		click(pom.getManageProvider().getPopupYesButton());
+		System.out.println("Provider Popup is successfully closed");
 		Thread.sleep(2000);
 	}
 
 	@When("user Add the New Provider account")
-	public void user_add_the_new_provider_account() throws InterruptedException, AWTException {
+	public void user_add_the_new_provider_account() throws InterruptedException, AWTException, IOException {
 		user_click_the_add_manager_providers_button();
+		takesScreenshot("addProviderPopup");
+		Thread.sleep(2000);
 		user_enter_the_provider_last_name_and_first_name();
 		user_select_the_provider_suffix_from_the_dropdown_field();
 		user_enter_the_provider_phone_number_and_email_address();
@@ -988,6 +998,7 @@ public class StepDefinition extends BaseClass {
 		user_provider_mapping_the_account_manager_from_the_dropdown_field();
 		Thread.sleep(1000);
 		click(pom.getManageProvider().getAddProvider());
+		System.out.println("New Provider is sucessfully added");
 
 	}
 
@@ -1032,10 +1043,11 @@ public class StepDefinition extends BaseClass {
 
 	@When("User again Click Edit icon to change the Provider informations")
 	public void user_again_click_edit_icon_to_change_the_provider_informations()
-			throws InterruptedException, AWTException {
+			throws InterruptedException, AWTException, IOException {
 		user_check_the_cancel_confirmation_popup_is_displayed();
 		Thread.sleep(2000);
 		click(pom.getManageProvider().getEditProvider());
+		Thread.sleep(2000);
 		clear(pom.getManageProvider().getEmail());
 		Thread.sleep(3000);
 		sendKeys(pom.getManageProvider().getEmail(), "yeui");
@@ -1070,7 +1082,9 @@ public class StepDefinition extends BaseClass {
 		} else {
 			System.out.println("Email field is not throwing validation error message");
 		}
-
+		
+		Thread.sleep(2000);
+		takesScreenshot("editProviderPopup");
 		Thread.sleep(2000);
 
 	}
@@ -1078,6 +1092,7 @@ public class StepDefinition extends BaseClass {
 	@Then("User Update the Provider Details")
 	public void user_update_the_provider_details() throws InterruptedException {
 		click(pom.getManageProvider().getUpdateProvider());
+		System.out.println("Provider has been successfully updated");
 		Thread.sleep(2000);
 	}
 
@@ -1147,9 +1162,11 @@ public class StepDefinition extends BaseClass {
 	public void user_select_the_patient_dob_from_the_date_picker() throws AWTException, InterruptedException {
 		click(pom.getManagePatients().getDateOfBirth());
 		Thread.sleep(1500);
-		click(pom.getManagePatients().getDatePickOk());
+		robot("enter");
+
 
 	}
+
 
 	@Given("User enter the Patient Phone Number and Email Address")
 	public void user_enter_the_patient_phone_number_and_email_address() throws InterruptedException {
@@ -1204,11 +1221,11 @@ public class StepDefinition extends BaseClass {
 		actions("click", pom.getAccountManagerMenu().getPopupCloseIcon());
 		Thread.sleep(2000);
 		click(pom.getAccountManagerMenu().getPopupYesButton());
-
+		System.out.println("Add patient popup is closed");
 	}
 
 	@Given("User Click the Share Link button")
-	public void user_click_the_share_link_button() throws InterruptedException, AWTException {
+	public void user_click_the_share_link_button() throws InterruptedException, AWTException, IOException {
 		Thread.sleep(2000);
 		user_click_the_add_manager_patients_button();
 		user_select_the_service_location_name_from_the_dropdown_field();
@@ -1224,13 +1241,15 @@ public class StepDefinition extends BaseClass {
 		robot("enter");
 		user_select_the_invite_sharing_preference();
 		Thread.sleep(2000);
+		takesScreenshot("shareInviteLink");
+		Thread.sleep(2000);
 		click(pom.getManagePatients().getShareLink());
-
+		
 	}
 
 	@Then("User Check the Invite has been received to Patient email address")
 	public void user_check_the_invite_has_been_received_to_patient_email_address()
-			throws AWTException, InterruptedException {
+			throws AWTException, InterruptedException, IOException {
 		Thread.sleep(2000);
 		if (getText(pom.getManagePatients().getServiceValidation()).equals("Please select a Service Location")) {
 			user_select_the_service_location_name_from_the_dropdown_field();
@@ -1238,17 +1257,21 @@ public class StepDefinition extends BaseClass {
 			user_select_the_account_manager_name_from_the_dropdown_field();
 			user_select_the_procedure_name_from_the_dropdown_field();
 			user_select_the_invite_sharing_preference();
+			Thread.sleep(2000);
+			takesScreenshot("shareInviteLink");
 			Thread.sleep(1500);
 			click(pom.getManagePatients().getShareLink());
 
 		} else {
-			System.out.println("Patient invite has been to sent");
+			System.out.println("Patient invite has been sent");
 		}
+		
+		System.out.println("Patient invitation is sucessfully sent");
 
 	}
 
 	@Given("Patient Click the Registration Invite Link")
-	public void patient_click_the_registration_invite_link() throws InterruptedException, AWTException {
+	public void patient_click_the_registration_invite_link() throws InterruptedException, AWTException, IOException {
 		Thread.sleep(3000);
 		navigateRefresh();
 		webDriverWait(30, "Visible", pom.getManagePatients().getLogout());
@@ -1268,6 +1291,8 @@ public class StepDefinition extends BaseClass {
 		click(pom.getManagePatients().getMail());
 		backwardFrame("defaultContent");
 		frameByElement(pom.getManagePatients().getMailContent());
+		Thread.sleep(2000);
+		takesScreenshot("RegistrationInviteMail");
 		Thread.sleep(2000);
 		click(pom.getManagePatients().getRegisterNow());
 		Thread.sleep(1200);
@@ -1528,32 +1553,39 @@ public class StepDefinition extends BaseClass {
 		} else {
 			System.out.println("card number already entered");
 		}
+		Thread.sleep(3000);
 
 		if (isDisplayed(pom.getPatientRegistration().getExpiryValidation())) {
 			sendKeys(pom.getPatientRegistration().getExpiryNumber(), "1245");
 		} else {
 			System.out.println("Card Expiry date already entered");
 		}
+		Thread.sleep(3000);
 
 		if (isDisplayed(pom.getPatientRegistration().getCvcValidation())) {
 			sendKeys(pom.getPatientRegistration().getCvcNumber(), "666");
 		} else {
 			System.out.println("Card CVC Number already entered");
 		}
-
+		Thread.sleep(3000);
+		
 		if (isDisplayed(pom.getPatientRegistration().getCardZipcodeValidation())) {
 			sendKeys(pom.getPatientRegistration().getPostalCode(), "23354");
 		} else {
 			System.out.println("Card Zipcode already entered");
 		}
+		Thread.sleep(3000);
 
 	}
 
 	@When("User click the Pay button")
-	public void user_click_the_pay_button() throws InterruptedException {
+	public void user_click_the_pay_button() throws InterruptedException, IOException {
 		backwardFrame("defaultContent");
 		Thread.sleep(2000);
+		takesScreenshot("PaymentMode");
+		Thread.sleep(2000);
 		click(pom.getPatientRegistration().getPayButton());
+		System.out.println("Patient Payment process has been successfully completed");
 
 	}
 
@@ -1569,6 +1601,7 @@ public class StepDefinition extends BaseClass {
 		((JavascriptExecutor) driver).executeScript("window.close()");
 		windowHandles(0);
 		Thread.sleep(2000);
+		System.out.println("User Successfully redirected to Admin Login page");
 		sendKeys(pom.getLogin().getUsername(), "superadmin@cirque.com");
 		Thread.sleep(2000);
 		sendKeys(pom.getLogin().getPassword(), "Admin@123");
@@ -1580,7 +1613,6 @@ public class StepDefinition extends BaseClass {
 	public void user_navigated_to_manage_payment_menu() throws InterruptedException, AWTException {
 		Thread.sleep(1500);
 		click(pom.getManagePayments().getManagepaymentsMenu());
-
 	}
 
 	@When("User click the Manage Payment Menu")
@@ -1742,6 +1774,7 @@ public class StepDefinition extends BaseClass {
 			Thread.sleep(2500);
 			sendKeys(pom.getManagePayments().getSearchWithStatus(), "Paid");
 			Thread.sleep(2500);
+			System.out.println("Patient Payment detail was successfully fetched");
 
 		} else {
 			System.out.println("Quick Search is not working as expected");
@@ -1857,6 +1890,7 @@ public class StepDefinition extends BaseClass {
 			select(pom.getCensusList().getPatientStatus(), "text", "In-Progress");
 			Thread.sleep(2000);
 			click(pom.getCensusList().getUpdateButton());
+			System.out.println("Patient Census Status changed as In-progress");	
 		} else {
 			System.out.println("dropdown value is selected");
 
@@ -1874,8 +1908,9 @@ public class StepDefinition extends BaseClass {
 			select(pom.getCensusList().getPatientStatus(), "text", "Completed");
 			Thread.sleep(1000);
 			click(pom.getCensusList().getUpdateButton());
+			System.out.println("Patient Census Status changed as Completed");
 		} else {
-			System.out.println("Patient Census has been Completed");
+			System.out.println("Patient Census status is already changed as Completed");
 		}
 	}
 
@@ -2068,16 +2103,19 @@ public class StepDefinition extends BaseClass {
 	}
 
 	@When("User check the Confirmation Popup is presented")
-	public void user_check_the_confirmation_popup_is_presented() throws InterruptedException {
+	public void user_check_the_confirmation_popup_is_presented() throws InterruptedException, IOException {
 		Thread.sleep(3000);
 		click(pom.getChangePassword().getPopupYesButton());
 		Thread.sleep(3000);
 		if(getText(pom.getChangePassword().getOldPasswordToaster()).contains("Old Password is incorrect")) {
 			Thread.sleep(3000);
 			click(pom.getChangePassword().getChangePasswordButton());
+			Thread.sleep(1500);
+			takesScreenshot("ChangePassword");
 			Thread.sleep(2500);
 			click(pom.getChangePassword().getPopupYesButton());
 			Thread.sleep(2500);
+			System.out.println("Password is changed successfully");
 		}
 
 	}

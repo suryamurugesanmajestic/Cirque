@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 6, 2024 11:56:12 am</span></a>
+<a href="#"><span class="badge badge-primary">Dec 30, 2024 03:31:01 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,25 +90,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Cirque Healthcare! Application it has managing the patients treatment process</p>
             <p class="text-sm">
-              <span>11:56:16 am</span> / <span>00:23:04:314</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:31:11 pm</span> / <span>00:21:28:072</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Cirque Healthcare! Application it has managing the patients treatment process</h5>
-<span class='badge badge-success'>12.06.2024 11:56:16 am</span>
-<span class='badge badge-danger'>12.06.2024 12:19:21 pm</span>
-<span class='badge badge-default'>00:23:04:314</span>
+<h5 class="test-status text-fail">Cirque Healthcare! Application it has managing the patients treatment process</h5>
+<span class='badge badge-success'>12.30.2024 3:31:11 pm</span>
+<span class='badge badge-danger'>12.30.2024 3:52:39 pm</span>
+<span class='badge badge-default'>00:21:28:072</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -212,39 +217,71 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Edit Account Manager Information</div>
+        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>Edit Account Manager Information</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="com.stepDefinition.StepDefinition.download_the_excel_and_pdf_files()">
                 <span>And Download the Excel and PDF files</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid()">
                 <span>And Search the added Account Manager listed in the resultant Grid</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
+*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
+	at com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid(StepDefinition.java:283)
+	at ✽.Search the added Account Manager listed in the resultant Grid(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:26)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_the_account_manager_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_the_account_manager_details()">
                 <span>And User click the Edit the Account Manager Details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_close_icon_to_getting_the_confirmation_popup()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_close_icon_to_getting_the_confirmation_popup()">
                 <span>And User Click the close Icon to getting the Confirmation popup</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_account_manager_informations()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_account_manager_informations()">
                 <span>And User again Click Edit icon to change the Account Manager informations</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_update_the_account_manager_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_update_the_account_manager_details()">
                 <span>Then User Update the Account Manager Details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -253,74 +290,85 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>User Navigated to Service Location Menu and Add Service Location</div>
+        <div class="node" id="26"><span class="badge log fail-bg mr-2">Fail</span>User Navigated to Service Location Menu and Add Service Location</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_service_location_menu()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_the_service_location_menu()">
                 <span>Given User click the Service Location Menu</span>
       <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [https://cirque.sgssys.info/ServiceLocation] but found [https://cirque.sgssys.info/ManageAccountManager]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.stepDefinition.StepDefinition.user_click_the_service_location_menu(StepDefinition.java:366)
+	at ✽.User click the Service Location Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:34)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_new_service_location_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_new_service_location_button()">
                 <span>When User click the Add New Service Location button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_location_input_into_location_name_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_location_input_into_location_name_field()">
                 <span>And User enter location input into Location Name field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_location_address1_and_address2()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_location_address1_and_address2()">
                 <span>And User enter the Location Address1 and Address2</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_input_into_city_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_input_into_city_field()">
                 <span>And User enter the input into City field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_value_from_state_dropdown()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_value_from_state_dropdown()">
                 <span>And User Select the value from State dropdown</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_input_into_zip_code_and_phone_number_fields()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_input_into_zip_code_and_phone_number_fields()">
                 <span>And User enter the input into zip code and Phone number fields</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_input_into_email_and_website_url_fields()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_input_into_email_and_website_url_fields()">
                 <span>And User enter the input into email and Website URL fields</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_account_manager_and_procedures_value_from_the_dropdown()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_account_manager_and_procedures_value_from_the_dropdown()">
                 <span>And User select the Account Manager and Procedures value from the dropdown</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_choose_the_service_logo()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_choose_the_service_logo()">
                 <span>And User choose the Service logo</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_to_close_the_add_service_location_popup()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_to_close_the_add_service_location_popup()">
                 <span>And User Click to close the Add Service location popup</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_again_enter_the_service_location_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_again_enter_the_service_location_details()">
                 <span>And User again Enter the Service Location details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.click_the_add_button_to_create_the_service_location()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.click_the_add_button_to_create_the_service_location()">
                 <span>And Click the Add button to create the Service Location</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -329,29 +377,61 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>Edit Service Location Information in Service Location Menu</div>
+        <div class="node" id="40"><span class="badge log fail-bg mr-2">Fail</span>Edit Service Location Information in Service Location Menu</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="com.stepDefinition.StepDefinition.download_the_service_location_excel_and_pdf_files()">
                 <span>And Download the service location Excel and PDF files</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details()">
                 <span>And User click the Edit the Service Location Details</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-wrapper"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
+*** Element info: {Using=xpath, value=//*[@id="main-wrapper"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
+	at com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details(StepDefinition.java:622)
+	at ✽.User click the Edit the Service Location Details(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:51)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_service_location_informations()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_service_location_informations()">
                 <span>And User again Click Edit icon to change the Service Location informations</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_update_the_service_location_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_update_the_service_location_details()">
                 <span>Then User Update the Service Location Details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -878,7 +958,105 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:34:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Given User click the Service Location Menu</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User Navigated to Service Location Menu and Add Service Location.Given User click the Service Location Menu</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:33:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>And Search the added Account Manager listed in the resultant Grid</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Account Manager Information.And Search the added Account Manager listed in the resultant Grid</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:34:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>And User click the Edit the Service Location Details</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Service Location Information in Service Location Menu.And User click the Edit the Service Location Details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -910,7 +1088,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:56:16 am</td>
+<td>15:31:11 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>User was login into the Application</a>
 <div class="">
@@ -925,15 +1103,17 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>12</span>
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>3</span>
 </span>
 <p class="name">@Add</p>
-<p class="duration text-sm">12 tests</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Add</h4>
-<span status="pass" class='badge log pass-bg'>12 passed</span>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -946,7 +1126,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:57:13 am</td>
+<td>15:32:09 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='10'>User Navigated to Account Manager Menu and Add New Account Manager</a>
 <div class="">
@@ -954,9 +1134,9 @@
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:58:31 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:33:27 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='19'>Edit Account Manager Information</a>
 <div class="">
@@ -964,9 +1144,9 @@
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:59:27 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:34:38 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='26'>User Navigated to Service Location Menu and Add Service Location</a>
 <div class="">
@@ -974,9 +1154,9 @@
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:08 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:34:38 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='40'>Edit Service Location Information in Service Location Menu</a>
 <div class="">
@@ -986,7 +1166,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:03:11 pm</td>
+<td>15:35:52 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='45'>User can able to assign the form to service location in Manage Form Menu</a>
 <div class="">
@@ -996,7 +1176,7 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:05:22 pm</td>
+<td>15:38:11 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='51'>User Can add new provider in Manage Providers Menu</a>
 <div class="">
@@ -1006,61 +1186,11 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:07:40 pm</td>
+<td>15:40:32 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='62'>Edit Provider Information in Manage Providers Menu</a>
 <div class="">
 <span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Provider Information in Manage Providers Menu</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:08:53 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='67'>User can able to send Patient Registration Invite Link in Manage Patient Menu</a>
-<div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User can able to send Patient Registration Invite Link in Manage Patient Menu</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:10:38 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='81'>Patient was Login into Patient Registration Portal</a>
-<div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Patient was Login into Patient Registration Portal</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:11:28 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='87'>Patient was entering the Patient Information details</a>
-<div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Patient was entering the Patient Information details</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:14:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='105'>Admin Login the Application to verify the Patient payment transaction was successed</a>
-<div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Admin Login the Application to verify the Patient payment transaction was successed</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:16:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='115'>User Check the Patient Census Lists in Census List Menu</a>
-<div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User Check the Patient Census Lists in Census List Menu</span>
 </div>
 </td>
 </tr>
@@ -1081,25 +1211,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 6, 2024 11:56:12 am</h3>
+<h3>Dec 30, 2024 03:31:01 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 6, 2024 12:19:21 pm</h3>
+<h3>Dec 30, 2024 03:52:39 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -1115,12 +1245,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1138,9 +1268,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>14</b> scenarios passed</small></div>
+<div><small data-tooltip='78%'><b>11</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='21%'><b>3</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1158,10 +1288,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>120</b> steps passed</small></div>
+<div><small data-tooltip='82%'><b>99</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='2%'><b>3</b> steps failed,
+<b>18</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -1177,7 +1307,7 @@
 </div></div>
 <script>
 var timeline = {
-"Cirque Healthcare! Application it has managing the patients treatment process":1384.314
+"Cirque Healthcare! Application it has managing the patients treatment process":1288.072
 };
 </script>
 <div class="row">
@@ -1196,11 +1326,11 @@ var timeline = {
 </tr>
 <tr>
 <td>@Add</td>
-<td>12</td>
+<td>4</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>57.143%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1211,21 +1341,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 14,
-failChild: 0,
+passChild: 11,
+failChild: 3,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 120,
-failGrandChild: 0,
+passGrandChild: 99,
+failGrandChild: 3,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 18,
 infoGrandChild: 0,
 eventsCount: 5,
 };
