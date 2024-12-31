@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 30, 2024 03:31:01 pm</span></a>
+<a href="#"><span class="badge badge-primary">Dec 31, 2024 10:17:19 AM</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">Cirque Healthcare! Application it has managing the patients treatment process</p>
             <p class="text-sm">
-              <span>3:31:11 pm</span> / <span>00:21:28:072</span>
+              <span>10:17:39 AM</span> / <span>00:00:41:422</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Cirque Healthcare! Application it has managing the patients treatment process</h5>
-<span class='badge badge-success'>12.30.2024 3:31:11 pm</span>
-<span class='badge badge-danger'>12.30.2024 3:52:39 pm</span>
-<span class='badge badge-default'>00:21:28:072</span>
+<span class='badge badge-success'>12.31.2024 10:17:39 AM</span>
+<span class='badge badge-danger'>12.31.2024 10:18:20 AM</span>
+<span class='badge badge-default'>00:00:41:422</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -120,10 +120,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User was login into the Application</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User was login into the Application</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_launch_the_url(java.lang.String)">
                 <span>Given User launch the URL "https://cirque.sgssys.info/login"</span>
@@ -140,24 +140,42 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.enter_invalid_username_and_valid_password()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.enter_invalid_username_and_valid_password()">
                 <span>And Enter Invalid Username and Valid Password</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//button[.="Sign In"]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
+	at com.stepDefinition.StepDefinition.click_on_the_login_button(StepDefinition.java:142)
+	at com.stepDefinition.StepDefinition.enter_invalid_username_and_valid_password(StepDefinition.java:76)
+	at ✽.Enter Invalid Username and Valid Password(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:7)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.enter_valid_username_and_invalid_password()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.enter_valid_username_and_invalid_password()">
                 <span>And Enter Valid Username and Invalid Password</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.click_on_the_login_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.click_on_the_login_button()">
                 <span>And Click on the login Button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.employer_navigated_to_employer_dashboard_page()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.employer_navigated_to_employer_dashboard_page()">
                 <span>Then Employer navigated to Employer Dashboard page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -166,49 +184,74 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>User Navigated to Account Manager Menu and Add New Account Manager</div>
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>User Navigated to Account Manager Menu and Add New Account Manager</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_account_manager_menu()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_the_account_manager_menu()">
                 <span>Given User Click the Account Manager Menu</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
+	at com.cirqueBaseClass.BaseClass.getCurrentURL(BaseClass.java:97)
+	at com.stepDefinition.StepDefinition.user_click_the_account_manager_menu(StepDefinition.java:167)
+	at ✽.User Click the Account Manager Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:14)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_account_manager_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_account_manager_button()">
                 <span>When User click the Add Account Manager button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_input_into_the_last_and_first_name_fields()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_input_into_the_last_and_first_name_fields()">
                 <span>And User enter input into the Last and First Name fields</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_input_into_the_phone_number_and_email_address_fields()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_input_into_the_phone_number_and_email_address_fields()">
                 <span>And User enter input into the Phone Number and Email address fields</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_choose_the_commission_type()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_choose_the_commission_type()">
                 <span>And User Choose the Commission Type</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_close_icon_to_get_the_confirmation_popup()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_close_icon_to_get_the_confirmation_popup()">
                 <span>And User Click the close Icon to get the Confirmation Popup</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.enter_the_account_manager_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.enter_the_account_manager_details()">
                 <span>And Enter the Account Manager details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.click_the_add_button_to_create_the_account_manager()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.click_the_add_button_to_create_the_account_manager()">
                 <span>And Click the Add button to create the Account Manager</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -222,46 +265,39 @@
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.download_the_excel_and_pdf_files()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.download_the_excel_and_pdf_files()">
                 <span>And Download the Excel and PDF files</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid()">
-                <span>And Search the added Account Manager listed in the resultant Grid</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input"}
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
-*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
-	at com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid(StepDefinition.java:283)
-	at ✽.Search the added Account Manager listed in the resultant Grid(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:26)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)
+	at com.stepDefinition.StepDefinition.download_the_excel_and_pdf_files(StepDefinition.java:259)
+	at ✽.Download the Excel and PDF files(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:25)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid()">
+                <span>And Search the added Account Manager listed in the resultant Grid</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_the_account_manager_details()">
@@ -298,14 +334,28 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
               <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_the_service_location_menu()">
                 <span>Given User click the Service Location Menu</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [https://cirque.sgssys.info/ServiceLocation] but found [https://cirque.sgssys.info/ManageAccountManager]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.stepDefinition.StepDefinition.user_click_the_service_location_menu(StepDefinition.java:366)
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
+	at com.cirqueBaseClass.BaseClass.getCurrentURL(BaseClass.java:97)
+	at com.stepDefinition.StepDefinition.user_click_the_service_location_menu(StepDefinition.java:364)
 	at ✽.User click the Service Location Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:34)
 </textarea>
       
@@ -382,28 +432,22 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.download_the_service_location_excel_and_pdf_files()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.download_the_service_location_excel_and_pdf_files()">
                 <span>And Download the service location Excel and PDF files</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details()">
-                <span>And User click the Edit the Service Location Details</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="main-wrapper"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i"}
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
-*** Element info: {Using=xpath, value=//*[@id="main-wrapper"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+*** Element info: {Using=xpath, value=//*[.="PDF"]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -416,12 +460,17 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
 	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
-	at com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details(StepDefinition.java:622)
-	at ✽.User click the Edit the Service Location Details(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:51)
+	at com.stepDefinition.StepDefinition.download_the_service_location_excel_and_pdf_files(StepDefinition.java:595)
+	at ✽.Download the service location Excel and PDF files(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:50)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details()">
+                <span>And User click the Edit the Service Location Details</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_service_location_informations()">
@@ -440,34 +489,59 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>User can able to assign the form to service location in Manage Form Menu</div>
+        <div class="node" id="45"><span class="badge log fail-bg mr-2">Fail</span>User can able to assign the form to service location in Manage Form Menu</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_to_navigate_manage_form_menu()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_to_navigate_manage_form_menu()">
                 <span>Given User Click to navigate Manage Form menu</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)
+	at com.stepDefinition.StepDefinition.user_click_to_navigate_manage_form_menu(StepDefinition.java:683)
+	at ✽.User Click to navigate Manage Form menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:57)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_view_icon_to_view_the_forms()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_view_icon_to_view_the_forms()">
                 <span>When User click View Icon to view the Forms</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_to_edit_the_forms()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_to_edit_the_forms()">
                 <span>And User click to Edit the Forms</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_assign_the_service_location()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_assign_the_service_location()">
                 <span>And User Assign the Service Location</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_update_the_assigned_service_location()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_update_the_assigned_service_location()">
                 <span>And User Update the assigned service Location</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -476,59 +550,84 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>User Can add new provider in Manage Providers Menu</div>
+        <div class="node" id="51"><span class="badge log fail-bg mr-2">Fail</span>User Can add new provider in Manage Providers Menu</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_to_navigate_manage_providers_menu()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_to_navigate_manage_providers_menu()">
                 <span>Given User Click to navigate Manage Providers menu</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)
+	at com.stepDefinition.StepDefinition.user_click_to_navigate_manage_providers_menu(StepDefinition.java:853)
+	at ✽.User Click to navigate Manage Providers menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:65)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_manager_providers_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_manager_providers_button()">
                 <span>And User click the Add Manager Providers button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_provider_last_name_and_first_name()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_provider_last_name_and_first_name()">
                 <span>And User enter the provider Last Name and First Name</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_provider_suffix_from_the_dropdown_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_provider_suffix_from_the_dropdown_field()">
                 <span>And User select the provider suffix from the dropdown field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_provider_phone_number_and_email_address()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_provider_phone_number_and_email_address()">
                 <span>And User enter the provider Phone Number and Email address</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_provider_state_from_the_dropdown_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_provider_state_from_the_dropdown_field()">
                 <span>And User select the provider State from the dropdown field.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_provider_medical_license_number_and_npi_number()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_provider_medical_license_number_and_npi_number()">
                 <span>And User enter the provider Medical License Number and NPI number</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_provider_mapping_the_account_manager_from_the_dropdown_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_provider_mapping_the_account_manager_from_the_dropdown_field()">
                 <span>And User provider mapping the Account Manager from the dropdown field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_check_the_cancel_confirmation_popup_is_displayed()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_check_the_cancel_confirmation_popup_is_displayed()">
                 <span>And User check the Cancel Confirmation popup is displayed</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_add_the_new_provider_account()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_add_the_new_provider_account()">
                 <span>And user Add the New Provider account</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -537,29 +636,218 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>Edit Provider Information in Manage Providers Menu</div>
+        <div class="node" id="62"><span class="badge log fail-bg mr-2">Fail</span>Edit Provider Information in Manage Providers Menu</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files()">
                 <span>Given Download to Export Providers List to Excel and PDF files</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:70)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at com.cirqueBaseClass.BaseClass.actions(BaseClass.java:230)
+	at com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files(StepDefinition.java:1008)
+	at ✽.Download to Export Providers List to Excel and PDF files(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:78)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+		at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+		at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+		at com.cirqueBaseClass.BaseClass.actions(BaseClass.java:230)
+		at com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files(StepDefinition.java:1008)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+		at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+		at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+		at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+		at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+		at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+		at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+		at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+		at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+		at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+		at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+		at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+		at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+		at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+		at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+		at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+		at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+		at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+		at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+		at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+		at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+		at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+		at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+		at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:70)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at com.cirqueBaseClass.BaseClass.actions(BaseClass.java:230)
+	at com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files(StepDefinition.java:1008)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+*** Element info: {Using=xpath, value=//*[.="PDF"]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 69 more
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.User_click_the_Edit_button_from_the_provider_Grid_list()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.User_click_the_Edit_button_from_the_provider_Grid_list()">
                 <span>When User click the Edit button from the provider Grid list</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_provider_informations()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_again_click_edit_icon_to_change_the_provider_informations()">
                 <span>And User again Click Edit icon to change the Provider informations</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_update_the_provider_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_update_the_provider_details()">
                 <span>Then User Update the Provider Details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -568,74 +856,99 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>User can able to send Patient Registration Invite Link in Manage Patient Menu</div>
+        <div class="node" id="67"><span class="badge log fail-bg mr-2">Fail</span>User can able to send Patient Registration Invite Link in Manage Patient Menu</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_manage_patients_menu_to_redirected_to_manage_patient_page()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_the_manage_patients_menu_to_redirected_to_manage_patient_page()">
                 <span>Given User click the Manage Patients Menu to redirected to manage patient page</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)
+	at com.stepDefinition.StepDefinition.user_click_the_manage_patients_menu_to_redirected_to_manage_patient_page(StepDefinition.java:1101)
+	at ✽.User click the Manage Patients Menu to redirected to manage patient page(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:85)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_manager_patients_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_add_manager_patients_button()">
                 <span>And User click the Add Manager patients button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_service_location_name_from_the_dropdown_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_service_location_name_from_the_dropdown_field()">
                 <span>And User select the Service Location Name from the dropdown field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_provider_name_from_the_dropdown_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_provider_name_from_the_dropdown_field()">
                 <span>And User select the Provider Name from the dropdown field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_account_manager_name_from_the_dropdown_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_account_manager_name_from_the_dropdown_field()">
                 <span>And User select the Account Manager Name from the dropdown field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_patient_last_name_and_first_name()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_patient_last_name_and_first_name()">
                 <span>And User enter the Patient Last Name and First Name</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_patient_dob_from_the_date_picker()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_patient_dob_from_the_date_picker()">
                 <span>And User select the Patient DOB from the Date picker</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_the_patient_phone_number_and_email_address()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_the_patient_phone_number_and_email_address()">
                 <span>And User enter the Patient Phone Number and Email Address</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_procedure_name_from_the_dropdown_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_procedure_name_from_the_dropdown_field()">
                 <span>And User select the Procedure Name from the dropdown field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_select_the_invite_sharing_preference()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_select_the_invite_sharing_preference()">
                 <span>And User Select the invite sharing Preference</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_close_the_add_patient_popup()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_close_the_add_patient_popup()">
                 <span>And User Close the Add Patient Popup</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_share_link_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_share_link_button()">
                 <span>And User Click the Share Link button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_check_the_invite_has_been_received_to_patient_email_address()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_check_the_invite_has_been_received_to_patient_email_address()">
                 <span>Then User Check the Invite has been received to Patient email address</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -644,34 +957,59 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Patient was Login into Patient Registration Portal</div>
+        <div class="node" id="81"><span class="badge log fail-bg mr-2">Fail</span>Patient was Login into Patient Registration Portal</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_click_the_registration_invite_link()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.patient_click_the_registration_invite_link()">
                 <span>Given Patient Click the Registration Invite Link</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
+	at com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)
+	at com.stepDefinition.StepDefinition.patient_click_the_registration_invite_link(StepDefinition.java:1276)
+	at ✽.Patient Click the Registration Invite Link(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:101)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_enter_the_last_name_into_last_name_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_enter_the_last_name_into_last_name_field()">
                 <span>And Patient Enter the Last Name into LastName field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_enter_the_dob_into_dob_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_enter_the_dob_into_dob_field()">
                 <span>And Patient Enter the DOB into DOB field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_click_to_verify_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_click_to_verify_button()">
                 <span>And Patient click to verify button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_should_navigate_to_patient_registration_page()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_should_navigate_to_patient_registration_page()">
                 <span>Then Patient should navigate to Patient Registration Page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -680,94 +1018,125 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="87"><span class="badge log pass-bg mr-2">Pass</span>Patient was entering the Patient Information details</div>
+        <div class="node" id="87"><span class="badge log fail-bg mr-2">Fail</span>Patient was entering the Patient Information details</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_entering_patient_ssn_and_address()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.patient_entering_patient_ssn_and_address()">
                 <span>Given patient entering patient SSN and Address</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+*** Element info: {Using=xpath, value=//button[.="Next"]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
+	at com.stepDefinition.StepDefinition.patient_entering_patient_ssn_and_address(StepDefinition.java:1368)
+	at ✽.patient entering patient SSN and Address(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:109)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_entering_city_and_select_state_from_the_dropdown()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_entering_city_and_select_state_from_the_dropdown()">
                 <span>When Patient entering city and Select state from the dropdown</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_entering_zipcode_and_modify_the_phone_and_email()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_entering_zipcode_and_modify_the_phone_and_email()">
                 <span>And Patient entering Zipcode and Modify the Phone and Email</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.select_is_patient_a_minor_radio_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.select_is_patient_a_minor_radio_button()">
                 <span>And Select is patient a minor radio button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_click_the_same_as_checkbox_and_unchecked_up_the_same_as_checkbox()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_click_the_same_as_checkbox_and_unchecked_up_the_same_as_checkbox()">
                 <span>And Patient click the same As checkbox  and unchecked up the sameAs checkbox</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_entering_parent_or_legal_guardian_information()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_entering_parent_or_legal_guardian_information()">
                 <span>And Patient entering Parent or Legal Guardian information</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_select_the_insurance_information_radio_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_select_the_insurance_information_radio_button()">
                 <span>And Patient select the insurance information radio button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.entering_patient_insurance_information_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.entering_patient_insurance_information_details()">
                 <span>And Entering Patient Insurance information details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_checked_up_the_confirm_this_information_is_accurate_checkbox()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_checked_up_the_confirm_this_information_is_accurate_checkbox()">
                 <span>And User checkedUp the confirm this information is accurate checkbox</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_entering_digital_signature()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_entering_digital_signature()">
                 <span>And patient entering digital signature</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_moved_to_next_form_tab_by_clicking_the_next_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_moved_to_next_form_tab_by_clicking_the_next_button()">
                 <span>And Patient moved to next form tab by clicking the next button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_entering_the_digital_signature()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_entering_the_digital_signature()">
                 <span>And User Entering the Digital signature</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.click_the_prev_button_to_check_the_patient_informations()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.click_the_prev_button_to_check_the_patient_informations()">
                 <span>And Click the Prev button to check the Patient Informations</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.click_the_proceed_to_pay_to_redirected_to_payment_page()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.click_the_proceed_to_pay_to_redirected_to_payment_page()">
                 <span>And Click the Proceed to Pay to redirected to payment Page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_enter_payment_card_details()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_enter_payment_card_details()">
                 <span>And User Enter payment card details</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_pay_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_pay_button()">
                 <span>And User click the Pay button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.patient_should_navigate_the_payment_status_page()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.patient_should_navigate_the_payment_status_page()">
                 <span>Then Patient should navigate the Payment Status page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -776,54 +1145,85 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="105"><span class="badge log pass-bg mr-2">Pass</span>Admin Login the Application to verify the Patient payment transaction was successed</div>
+        <div class="node" id="105"><span class="badge log fail-bg mr-2">Fail</span>Admin Login the Application to verify the Patient payment transaction was successed</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_navigated_to_manage_payment_menu()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_navigated_to_manage_payment_menu()">
                 <span>Given User navigated to Manage payment Menu</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+*** Element info: {Using=xpath, value=//a[@title="Manage Payments"]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
+	at com.stepDefinition.StepDefinition.user_navigated_to_manage_payment_menu(StepDefinition.java:1615)
+	at ✽.User navigated to Manage payment Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:129)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_manage_payment_menu()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_manage_payment_menu()">
                 <span>When User click the Manage Payment Menu</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_pick_the_from_date_and_to_date_from_the_date_picker()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_pick_the_from_date_and_to_date_from_the_date_picker()">
                 <span>And User pick the From date and To date from the Date Picker</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_filtering_the_payment_list_by_using_date_range_filter()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_filtering_the_payment_list_by_using_date_range_filter()">
                 <span>And User filtering the Payment list by using Date Range filter</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_search_button_to_filter_the_data()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_search_button_to_filter_the_data()">
                 <span>And User Click the Search button to filter the data</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_reset_button_to_get_all_the_datas()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_reset_button_to_get_all_the_datas()">
                 <span>And User Click the Reset button to get all the datas</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_flitering_the_data_by_using_quick_search_options()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_flitering_the_data_by_using_quick_search_options()">
                 <span>And User flitering the data by using Quick search options</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_payment_receipt_download_icon()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_payment_receipt_download_icon()">
                 <span>And User Click the Payment receipt download icon</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_exporting_the_payment_lists_to_excel_and_pdf_file()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_exporting_the_payment_lists_to_excel_and_pdf_file()">
                 <span>Then User Exporting the payment lists to Excel and PDF file</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -832,49 +1232,80 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="115"><span class="badge log pass-bg mr-2">Pass</span>User Check the Patient Census Lists in Census List Menu</div>
+        <div class="node" id="115"><span class="badge log fail-bg mr-2">Fail</span>User Check the Patient Census Lists in Census List Menu</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_census_list_menu_to_redirected_to_census_list_page()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_census_list_menu_to_redirected_to_census_list_page()">
                 <span>Given User click Census List Menu to redirected to Census List Page</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+*** Element info: {Using=xpath, value=//span[.="Census List"]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
+	at com.stepDefinition.StepDefinition.user_click_census_list_menu_to_redirected_to_census_list_page(StepDefinition.java:1802)
+	at ✽.User click Census List Menu to redirected to Census List Page(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:141)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_flitering_the_pending_census_data_by_using_quick_search_options()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_flitering_the_pending_census_data_by_using_quick_search_options()">
                 <span>When User flitering the Pending Census data by using Quick search options</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_status_icon_in_the_grid_list()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_the_edit_status_icon_in_the_grid_list()">
                 <span>And User click the Edit Status icon in the Grid list</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_change_the_patient_status_from_the_dropdown()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_change_the_patient_status_from_the_dropdown()">
                 <span>And User change the Patient Status From the dropdown</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_update_button_to_change_the_patient_status()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_update_button_to_change_the_patient_status()">
                 <span>And User click Update button to change the Patient Status</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_check_the_changed_patient_data_moved_to_completed_grid_list()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_check_the_changed_patient_data_moved_to_completed_grid_list()">
                 <span>And User check the Changed Patient data moved to completed Grid list</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_flitering_the_completed_census_data_by_using_quick_search_options()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_flitering_the_completed_census_data_by_using_quick_search_options()">
                 <span>And User flitering the Completed Census data by using Quick search options</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_exporting_the_census_lists_to_excel_and_pdf_file()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_exporting_the_census_lists_to_excel_and_pdf_file()">
                 <span>Then User Exporting the Census lists to Excel and PDF file</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -883,64 +1314,95 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>User can change the Password by themselves</div>
+        <div class="node" id="124"><span class="badge log fail-bg mr-2">Fail</span>User can change the Password by themselves</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_settings_menu_to_redirected_to_change_password_page()">
+              <div class="step fail-bg" title="com.stepDefinition.StepDefinition.user_click_settings_menu_to_redirected_to_change_password_page()">
                 <span>Given User click Settings menu to redirected to Change Password Page</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MPI-CPU-037', ip: '192.168.10.143', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\surya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e04973d5170cdc33a858ce581cc976e2
+*** Element info: {Using=xpath, value=//a[@title='Settings']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)
+	at com.stepDefinition.StepDefinition.user_click_settings_menu_to_redirected_to_change_password_page(StepDefinition.java:2001)
+	at ✽.User click Settings menu to redirected to Change Password Page(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:151)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_click_entering_old_password_into_old_password_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_click_entering_old_password_into_old_password_field()">
                 <span>When User click entering Old Password into Old Password field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_entering_the_new_password_into_new_password_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_entering_the_new_password_into_new_password_field()">
                 <span>And User entering the New Password into New Password Field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_entering_the_confirm_new_password_into_confirm_new_password_field()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_entering_the_confirm_new_password_into_confirm_new_password_field()">
                 <span>And User entering the Confirm New Password into Confirm New Password Field</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_check_the_new_and_confirm_new_password_field_with_invalid_input()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_check_the_new_and_confirm_new_password_field_with_invalid_input()">
                 <span>And User check the New and Confirm New Password field with invalid input</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_check_the_new_and_confirm_new_password_field_with_valid_input()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_check_the_new_and_confirm_new_password_field_with_valid_input()">
                 <span>And User check the New and Confirm New Password field with valid input</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_check_the_confirmation_popup_is_presented()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_check_the_confirmation_popup_is_presented()">
                 <span>And User check the Confirmation Popup is presented</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_check_the_successfully_logged_out_from_the_application_after_click_the_ok_button()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_check_the_successfully_logged_out_from_the_application_after_click_the_ok_button()">
                 <span>And User check the successfully logged out from the Application after click the ok button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_verify_the_login_with_old_password()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_verify_the_login_with_old_password()">
                 <span>And User verify the Login with old password</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_verify_the_login_with_newly_changed_password()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_verify_the_login_with_newly_changed_password()">
                 <span>And User verify the login with newly changed Password</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.stepDefinition.StepDefinition.user_should_be_logged_in_to_application()">
+              <div class="step skip-bg" title="com.stepDefinition.StepDefinition.user_should_be_logged_in_to_application()">
                 <span>Then User should be logged in to Application</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -962,7 +1424,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -971,12 +1433,12 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.json.JsonException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.json.JsonException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -990,11 +1452,11 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:34:38 pm</td>
+<td>10:18:04 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='27'>Given User click the Service Location Menu</a>
+<a href="#" class="linked" test-id='1' id='63'>Given Download to Export Providers List to Excel and PDF files</a>
 <div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User Navigated to Service Location Menu and Add Service Location.Given User click the Service Location Menu</span>
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Provider Information in Manage Providers Menu.Given Download to Export Providers List to Excel and PDF files</span>
 </div>
 </td>
 </tr>
@@ -1005,15 +1467,15 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1026,21 +1488,157 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:33:35 pm</td>
+<td>10:17:55 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='21'>And Search the added Account Manager listed in the resultant Grid</a>
+<a href="#" class="linked" test-id='1' id='6'>And Enter Invalid Username and Valid Password</a>
 <div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Account Manager Information.And Search the added Account Manager listed in the resultant Grid</span>
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User was login into the Application.And Enter Invalid Username and Valid Password</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>12</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>12 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:17:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Given User Click the Account Manager Menu</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User Navigated to Account Manager Menu and Add New Account Manager.Given User Click the Account Manager Menu</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:34:42 pm</td>
+<td>10:17:57 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='42'>And User click the Edit the Service Location Details</a>
+<a href="#" class="linked" test-id='1' id='20'>And Download the Excel and PDF files</a>
 <div class="">
-<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Service Location Information in Service Location Menu.And User click the Edit the Service Location Details</span>
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Account Manager Information.And Download the Excel and PDF files</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:17:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Given User click the Service Location Menu</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User Navigated to Service Location Menu and Add Service Location.Given User click the Service Location Menu</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:17:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>And Download the service location Excel and PDF files</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Edit Service Location Information in Service Location Menu.And Download the service location Excel and PDF files</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>Given User Click to navigate Manage Form menu</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User can able to assign the form to service location in Manage Form Menu.Given User Click to navigate Manage Form menu</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>Given User Click to navigate Manage Providers menu</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User Can add new provider in Manage Providers Menu.Given User Click to navigate Manage Providers menu</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Given User click the Manage Patients Menu to redirected to manage patient page</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User can able to send Patient Registration Invite Link in Manage Patient Menu.Given User click the Manage Patients Menu to redirected to manage patient page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='82'>Given Patient Click the Registration Invite Link</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Patient was Login into Patient Registration Portal.Given Patient Click the Registration Invite Link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='88'>Given patient entering patient SSN and Address</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Patient was entering the Patient Information details.Given patient entering patient SSN and Address</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Given User navigated to Manage payment Menu</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.Admin Login the Application to verify the Patient payment transaction was successed.Given User navigated to Manage payment Menu</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>Given User click Census List Menu to redirected to Census List Page</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User Check the Patient Census Lists in Census List Menu.Given User click Census List Menu to redirected to Census List Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='125'>Given User click Settings menu to redirected to Change Password Page</a>
+<div class="">
+<span class="badge badge-default">Cirque Healthcare! Application it has managing the patients treatment process.User can change the Password by themselves.Given User click Settings menu to redirected to Change Password Page</span>
 </div>
 </td>
 </tr>
@@ -1067,7 +1665,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@login</p>
 <p class="duration text-sm">1 tests</p>
@@ -1075,7 +1673,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <div class="test-contents d-none">
 <div class="info">
 <h4>@login</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1086,9 +1684,9 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:31:11 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:17:39 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>User was login into the Application</a>
 <div class="">
@@ -1103,8 +1701,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-danger'>7</span>
 </span>
 <p class="name">@Add</p>
 <p class="duration text-sm">7 tests</p>
@@ -1112,8 +1709,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Add</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1124,9 +1720,9 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:32:09 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:17:57 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='10'>User Navigated to Account Manager Menu and Add New Account Manager</a>
 <div class="">
@@ -1136,7 +1732,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:33:27 pm</td>
+<td>10:17:57 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='19'>Edit Account Manager Information</a>
 <div class="">
@@ -1146,7 +1742,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:34:38 pm</td>
+<td>10:17:57 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='26'>User Navigated to Service Location Menu and Add Service Location</a>
 <div class="">
@@ -1156,7 +1752,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:34:38 pm</td>
+<td>10:17:58 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='40'>Edit Service Location Information in Service Location Menu</a>
 <div class="">
@@ -1164,9 +1760,9 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:35:52 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:00 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='45'>User can able to assign the form to service location in Manage Form Menu</a>
 <div class="">
@@ -1174,9 +1770,9 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:38:11 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:02 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='51'>User Can add new provider in Manage Providers Menu</a>
 <div class="">
@@ -1184,9 +1780,9 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:40:32 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:18:04 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='62'>Edit Provider Information in Manage Providers Menu</a>
 <div class="">
@@ -1211,13 +1807,13 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 30, 2024 03:31:01 pm</h3>
+<h3>Dec 31, 2024 10:17:19 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 30, 2024 03:52:39 pm</h3>
+<h3>Dec 31, 2024 10:18:20 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1268,9 +1864,9 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='78%'><b>11</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='21%'><b>3</b> scenarios failed,
+<small data-tooltip='100%'><b>14</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1288,10 +1884,10 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='82%'><b>99</b> steps passed</small></div>
+<div><small data-tooltip='2%'><b>3</b> steps passed</small></div>
 <div>
-<small data-tooltip='2%'><b>3</b> steps failed,
-<b>18</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='11%'><b>14</b> steps failed,
+<b>103</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -1307,7 +1903,7 @@ Session ID: 8bd64a4e265aa04c5943da32b2f1f15c
 </div></div>
 <script>
 var timeline = {
-"Cirque Healthcare! Application it has managing the patients treatment process":1288.072
+"Cirque Healthcare! Application it has managing the patients treatment process":41.422
 };
 </script>
 <div class="row">
@@ -1318,19 +1914,19 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@login</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@Add</td>
-<td>4</td>
-<td>3</td>
+<td>0</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>57.143%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1346,16 +1942,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 11,
-failChild: 3,
+passChild: 0,
+failChild: 14,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 99,
-failGrandChild: 3,
+passGrandChild: 3,
+failGrandChild: 14,
 warningGrandChild: 0,
-skipGrandChild: 18,
+skipGrandChild: 103,
 infoGrandChild: 0,
 eventsCount: 5,
 };

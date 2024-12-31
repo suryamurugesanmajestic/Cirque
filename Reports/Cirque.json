@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-12-30T10:01:10.999Z",
+        "start_timestamp": "2024-12-31T04:47:39.022Z",
         "line": 3,
         "name": "User was login into the Application",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6252115400,
+              "duration": 9885569200,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 7993100,
+              "duration": 8995200,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 6436510700,
+              "duration": 6646954200,
               "status": "passed"
             },
             "line": 6,
@@ -55,8 +55,9 @@
           },
           {
             "result": {
-              "duration": 21383238600,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//button[.\u003d\"Sign In\"]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.click_on_the_login_button(StepDefinition.java:142)\r\n\tat com.stepDefinition.StepDefinition.enter_invalid_username_and_valid_password(StepDefinition.java:76)\r\n\tat ✽.Enter Invalid Username and Valid Password(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:7)\r\n",
+              "duration": 1229055400,
+              "status": "failed"
             },
             "line": 7,
             "name": "Enter Invalid Username and Valid Password",
@@ -67,8 +68,7 @@
           },
           {
             "result": {
-              "duration": 17209200000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Enter Valid Username and Invalid Password",
@@ -79,8 +79,8 @@
           },
           {
             "result": {
-              "duration": 82119800,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 9,
             "name": "Click on the login Button",
@@ -91,8 +91,8 @@
           },
           {
             "result": {
-              "duration": 6548255800,
-              "status": "passed"
+              "duration": 998700,
+              "status": "skipped"
             },
             "line": 10,
             "name": "Employer navigated to Employer Dashboard page",
@@ -109,7 +109,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:02:09.149Z",
+        "start_timestamp": "2024-12-31T04:47:57.664Z",
         "line": 13,
         "name": "User Navigated to Account Manager Menu and Add New Account Manager",
         "description": "",
@@ -119,8 +119,9 @@
         "steps": [
           {
             "result": {
-              "duration": 7995800,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)\r\n\tat com.cirqueBaseClass.BaseClass.getCurrentURL(BaseClass.java:97)\r\n\tat com.stepDefinition.StepDefinition.user_click_the_account_manager_menu(StepDefinition.java:167)\r\n\tat ✽.User Click the Account Manager Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:14)\r\n",
+              "duration": 180898200,
+              "status": "failed"
             },
             "line": 14,
             "name": "User Click the Account Manager Menu",
@@ -131,8 +132,8 @@
           },
           {
             "result": {
-              "duration": 4271363800,
-              "status": "passed"
+              "duration": 999600,
+              "status": "skipped"
             },
             "line": 15,
             "name": "User click the Add Account Manager button",
@@ -143,8 +144,7 @@
           },
           {
             "result": {
-              "duration": 5552312600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "User enter input into the Last and First Name fields",
@@ -155,8 +155,7 @@
           },
           {
             "result": {
-              "duration": 5645042800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "User enter input into the Phone Number and Email address fields",
@@ -167,8 +166,7 @@
           },
           {
             "result": {
-              "duration": 19004264100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "User Choose the Commission Type",
@@ -179,8 +177,7 @@
           },
           {
             "result": {
-              "duration": 4405750500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "User Click the close Icon to get the Confirmation Popup",
@@ -191,8 +188,7 @@
           },
           {
             "result": {
-              "duration": 39655742800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "Enter the Account Manager details",
@@ -203,8 +199,7 @@
           },
           {
             "result": {
-              "duration": 228144300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "Click the Add button to create the Account Manager",
@@ -221,7 +216,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:03:27.947Z",
+        "start_timestamp": "2024-12-31T04:47:57.875Z",
         "line": 24,
         "name": "Edit Account Manager Information",
         "description": "",
@@ -231,8 +226,9 @@
         "steps": [
           {
             "result": {
-              "duration": 7377555000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)\r\n\tat com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)\r\n\tat com.stepDefinition.StepDefinition.download_the_excel_and_pdf_files(StepDefinition.java:259)\r\n\tat ✽.Download the Excel and PDF files(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:25)\r\n",
+              "duration": 58966000,
+              "status": "failed"
             },
             "line": 25,
             "name": "Download the Excel and PDF files",
@@ -243,9 +239,7 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input\"}\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 8bd64a4e265aa04c5943da32b2f1f15c\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div[1]/div/div[5]/div/div[2]/div[2]/div/table/thead/tr/th[4]/div/input}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.search_the_added_account_manager_listed_in_the_resultant_grid(StepDefinition.java:283)\r\n\tat ✽.Search the added Account Manager listed in the resultant Grid(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:26)\r\n",
-              "duration": 62712574100,
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "Search the added Account Manager listed in the resultant Grid",
@@ -267,7 +261,6 @@
           },
           {
             "result": {
-              "duration": 999100,
               "status": "skipped"
             },
             "line": 28,
@@ -290,7 +283,6 @@
           },
           {
             "result": {
-              "duration": 999100,
               "status": "skipped"
             },
             "line": 30,
@@ -308,7 +300,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:04:38.106Z",
+        "start_timestamp": "2024-12-31T04:47:57.993Z",
         "line": 33,
         "name": "User Navigated to Service Location Menu and Add Service Location",
         "description": "",
@@ -318,8 +310,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected [https://cirque.sgssys.info/ServiceLocation] but found [https://cirque.sgssys.info/ManageAccountManager]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.stepDefinition.StepDefinition.user_click_the_service_location_menu(StepDefinition.java:366)\r\n\tat ✽.User click the Service Location Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:34)\r\n",
-              "duration": 20987600,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)\r\n\tat com.cirqueBaseClass.BaseClass.getCurrentURL(BaseClass.java:97)\r\n\tat com.stepDefinition.StepDefinition.user_click_the_service_location_menu(StepDefinition.java:364)\r\n\tat ✽.User click the Service Location Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:34)\r\n",
+              "duration": 13991900,
               "status": "failed"
             },
             "line": 34,
@@ -331,6 +323,7 @@
           },
           {
             "result": {
+              "duration": 998400,
               "status": "skipped"
             },
             "line": 35,
@@ -342,7 +335,7 @@
           },
           {
             "result": {
-              "duration": 1000500,
+              "duration": 1000200,
               "status": "skipped"
             },
             "line": 36,
@@ -354,6 +347,7 @@
           },
           {
             "result": {
+              "duration": 998600,
               "status": "skipped"
             },
             "line": 37,
@@ -376,6 +370,7 @@
           },
           {
             "result": {
+              "duration": 999400,
               "status": "skipped"
             },
             "line": 39,
@@ -398,6 +393,7 @@
           },
           {
             "result": {
+              "duration": 999000,
               "status": "skipped"
             },
             "line": 41,
@@ -420,6 +416,7 @@
           },
           {
             "result": {
+              "duration": 999800,
               "status": "skipped"
             },
             "line": 43,
@@ -442,6 +439,7 @@
           },
           {
             "result": {
+              "duration": 999800,
               "status": "skipped"
             },
             "line": 45,
@@ -470,7 +468,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:04:38.156Z",
+        "start_timestamp": "2024-12-31T04:47:58.031Z",
         "line": 49,
         "name": "Edit Service Location Information in Service Location Menu",
         "description": "",
@@ -480,8 +478,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4236084400,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\n*** Element info: {Using\u003dxpath, value\u003d//*[.\u003d\"PDF\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.download_the_service_location_excel_and_pdf_files(StepDefinition.java:595)\r\n\tat ✽.Download the service location Excel and PDF files(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:50)\r\n",
+              "duration": 2018873200,
+              "status": "failed"
             },
             "line": 50,
             "name": "Download the service location Excel and PDF files",
@@ -492,9 +491,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"main-wrapper\"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i\"}\n  (Session info: chrome\u003d131.0.6778.205)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 8bd64a4e265aa04c5943da32b2f1f15c\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"main-wrapper\"]/div[5]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[6]/div/a/i}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.user_click_the_edit_the_service_location_details(StepDefinition.java:622)\r\n\tat ✽.User click the Edit the Service Location Details(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:51)\r\n",
-              "duration": 70121886500,
-              "status": "failed"
+              "duration": 999200,
+              "status": "skipped"
             },
             "line": 51,
             "name": "User click the Edit the Service Location Details",
@@ -505,6 +503,7 @@
           },
           {
             "result": {
+              "duration": 999600,
               "status": "skipped"
             },
             "line": 52,
@@ -533,7 +532,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:05:52.529Z",
+        "start_timestamp": "2024-12-31T04:48:00.069Z",
         "line": 56,
         "name": "User can able to assign the form to service location in Manage Form Menu",
         "description": "",
@@ -543,8 +542,9 @@
         "steps": [
           {
             "result": {
-              "duration": 7141533900,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)\r\n\tat com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)\r\n\tat com.stepDefinition.StepDefinition.user_click_to_navigate_manage_form_menu(StepDefinition.java:683)\r\n\tat ✽.User Click to navigate Manage Form menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:57)\r\n",
+              "duration": 2030930000,
+              "status": "failed"
             },
             "line": 57,
             "name": "User Click to navigate Manage Form menu",
@@ -555,8 +555,8 @@
           },
           {
             "result": {
-              "duration": 21468948500,
-              "status": "passed"
+              "duration": 998500,
+              "status": "skipped"
             },
             "line": 58,
             "name": "User click View Icon to view the Forms",
@@ -567,8 +567,8 @@
           },
           {
             "result": {
-              "duration": 32109312800,
-              "status": "passed"
+              "duration": 1000100,
+              "status": "skipped"
             },
             "line": 59,
             "name": "User click to Edit the Forms",
@@ -579,8 +579,7 @@
           },
           {
             "result": {
-              "duration": 57270334100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 60,
             "name": "User Assign the Service Location",
@@ -591,8 +590,7 @@
           },
           {
             "result": {
-              "duration": 21432494500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 61,
             "name": "User Update the assigned service Location",
@@ -609,7 +607,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:08:11.973Z",
+        "start_timestamp": "2024-12-31T04:48:02.130Z",
         "line": 64,
         "name": "User Can add new provider in Manage Providers Menu",
         "description": "",
@@ -619,8 +617,9 @@
         "steps": [
           {
             "result": {
-              "duration": 14512084600,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)\r\n\tat com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)\r\n\tat com.stepDefinition.StepDefinition.user_click_to_navigate_manage_providers_menu(StepDefinition.java:853)\r\n\tat ✽.User Click to navigate Manage Providers menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:65)\r\n",
+              "duration": 2521539100,
+              "status": "failed"
             },
             "line": 65,
             "name": "User Click to navigate Manage Providers menu",
@@ -631,8 +630,7 @@
           },
           {
             "result": {
-              "duration": 2114872900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 66,
             "name": "User click the Add Manager Providers button",
@@ -643,8 +641,7 @@
           },
           {
             "result": {
-              "duration": 8419571300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 67,
             "name": "User enter the provider Last Name and First Name",
@@ -655,8 +652,7 @@
           },
           {
             "result": {
-              "duration": 4220474300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 68,
             "name": "User select the provider suffix from the dropdown field",
@@ -667,8 +663,7 @@
           },
           {
             "result": {
-              "duration": 10353096000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 69,
             "name": "User enter the provider Phone Number and Email address",
@@ -679,8 +674,8 @@
           },
           {
             "result": {
-              "duration": 9173264000,
-              "status": "passed"
+              "duration": 999100,
+              "status": "skipped"
             },
             "line": 70,
             "name": "User select the provider State from the dropdown field.",
@@ -691,8 +686,7 @@
           },
           {
             "result": {
-              "duration": 4324022000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 71,
             "name": "User enter the provider Medical License Number and NPI number",
@@ -703,8 +697,7 @@
           },
           {
             "result": {
-              "duration": 17828590600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 72,
             "name": "User provider mapping the Account Manager from the dropdown field",
@@ -715,8 +708,7 @@
           },
           {
             "result": {
-              "duration": 9468621500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 73,
             "name": "User check the Cancel Confirmation popup is displayed",
@@ -727,8 +719,7 @@
           },
           {
             "result": {
-              "duration": 59910131700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 74,
             "name": "user Add the New Provider account",
@@ -745,7 +736,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:10:32.323Z",
+        "start_timestamp": "2024-12-31T04:48:04.671Z",
         "line": 77,
         "name": "Edit Provider Information in Manage Providers Menu",
         "description": "",
@@ -755,8 +746,9 @@
         "steps": [
           {
             "result": {
-              "duration": 8349191300,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)\r\n\tat java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:70)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:42)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\tat com.cirqueBaseClass.BaseClass.actions(BaseClass.java:230)\r\n\tat com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files(StepDefinition.java:1008)\r\n\tat ✽.Download to Export Providers List to Excel and PDF files(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:78)\r\n\tSuppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\t\tat org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)\r\n\t\tat org.openqa.selenium.json.Json.toJson(Json.java:44)\r\n\t\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\t\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\t\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\t\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\t\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\t\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\t\tat com.cirqueBaseClass.BaseClass.actions(BaseClass.java:230)\r\n\t\tat com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files(StepDefinition.java:1008)\r\n\t\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\t\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\t\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\t\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\t\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\t\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\t\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\t\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\t\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\t\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\t\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\t\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\t\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\t\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\t\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\t\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\t\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\t\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\t\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\t\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\t\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\t\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\t\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\t\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\t\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)\r\n\t\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)\r\n\tat java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:70)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:42)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\tat com.cirqueBaseClass.BaseClass.actions(BaseClass.java:230)\r\n\tat com.stepDefinition.StepDefinition.download_to_export_providers_list_to_excel_and_pdf_files(StepDefinition.java:1008)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)\r\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\n*** Element info: {Using\u003dxpath, value\u003d//*[.\u003d\"PDF\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)\r\n\tat org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)\r\n\tat org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)\r\n\tat org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)\r\n\t... 69 more\r\n",
+              "duration": 3045051100,
+              "status": "failed"
             },
             "line": 78,
             "name": "Download to Export Providers List to Excel and PDF files",
@@ -767,8 +759,8 @@
           },
           {
             "result": {
-              "duration": 23399710700,
-              "status": "passed"
+              "duration": 15990900,
+              "status": "skipped"
             },
             "line": 79,
             "name": "User click the Edit button from the provider Grid list",
@@ -779,8 +771,8 @@
           },
           {
             "result": {
-              "duration": 44315413300,
-              "status": "passed"
+              "duration": 1000100,
+              "status": "skipped"
             },
             "line": 80,
             "name": "User again Click Edit icon to change the Provider informations",
@@ -791,8 +783,7 @@
           },
           {
             "result": {
-              "duration": 2089150500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 81,
             "name": "User Update the Provider Details",
@@ -809,7 +800,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:11:50.513Z",
+        "start_timestamp": "2024-12-31T04:48:07.768Z",
         "line": 84,
         "name": "User can able to send Patient Registration Invite Link in Manage Patient Menu",
         "description": "",
@@ -819,8 +810,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4451853800,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)\r\n\tat com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)\r\n\tat com.stepDefinition.StepDefinition.user_click_the_manage_patients_menu_to_redirected_to_manage_patient_page(StepDefinition.java:1101)\r\n\tat ✽.User click the Manage Patients Menu to redirected to manage patient page(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:85)\r\n",
+              "duration": 9995200,
+              "status": "failed"
             },
             "line": 85,
             "name": "User click the Manage Patients Menu to redirected to manage patient page",
@@ -831,8 +823,8 @@
           },
           {
             "result": {
-              "duration": 2180616900,
-              "status": "passed"
+              "duration": 999200,
+              "status": "skipped"
             },
             "line": 86,
             "name": "User click the Add Manager patients button",
@@ -843,8 +835,7 @@
           },
           {
             "result": {
-              "duration": 6686135800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 87,
             "name": "User select the Service Location Name from the dropdown field",
@@ -855,8 +846,7 @@
           },
           {
             "result": {
-              "duration": 5149926900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 88,
             "name": "User select the Provider Name from the dropdown field",
@@ -867,8 +857,7 @@
           },
           {
             "result": {
-              "duration": 5149849000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 89,
             "name": "User select the Account Manager Name from the dropdown field",
@@ -879,8 +868,7 @@
           },
           {
             "result": {
-              "duration": 3606028800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 90,
             "name": "User enter the Patient Last Name and First Name",
@@ -891,8 +879,7 @@
           },
           {
             "result": {
-              "duration": 3141915300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 91,
             "name": "User select the Patient DOB from the Date picker",
@@ -903,8 +890,7 @@
           },
           {
             "result": {
-              "duration": 10776034100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 92,
             "name": "User enter the Patient Phone Number and Email Address",
@@ -915,8 +901,7 @@
           },
           {
             "result": {
-              "duration": 3162838100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 93,
             "name": "User select the Procedure Name from the dropdown field",
@@ -927,8 +912,7 @@
           },
           {
             "result": {
-              "duration": 2163579100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 94,
             "name": "User Select the invite sharing Preference",
@@ -939,8 +923,8 @@
           },
           {
             "result": {
-              "duration": 10594765100,
-              "status": "passed"
+              "duration": 999400,
+              "status": "skipped"
             },
             "line": 95,
             "name": "User Close the Add Patient Popup",
@@ -951,8 +935,7 @@
           },
           {
             "result": {
-              "duration": 50451082900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 96,
             "name": "User Click the Share Link button",
@@ -963,8 +946,7 @@
           },
           {
             "result": {
-              "duration": 2044524700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 97,
             "name": "User Check the Invite has been received to Patient email address",
@@ -976,7 +958,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:13:40.094Z",
+        "start_timestamp": "2024-12-31T04:48:07.802Z",
         "line": 100,
         "name": "Patient was Login into Patient Registration Portal",
         "description": "",
@@ -986,8 +968,9 @@
         "steps": [
           {
             "result": {
-              "duration": 27618997200,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)\r\n\tat com.cirqueBaseClass.BaseClass.navigateRefresh(BaseClass.java:116)\r\n\tat com.stepDefinition.StepDefinition.patient_click_the_registration_invite_link(StepDefinition.java:1276)\r\n\tat ✽.Patient Click the Registration Invite Link(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:101)\r\n",
+              "duration": 3031155100,
+              "status": "failed"
             },
             "line": 101,
             "name": "Patient Click the Registration Invite Link",
@@ -998,8 +981,8 @@
           },
           {
             "result": {
-              "duration": 11985203300,
-              "status": "passed"
+              "duration": 2996600,
+              "status": "skipped"
             },
             "line": 102,
             "name": "Patient Enter the Last Name into LastName field",
@@ -1010,8 +993,7 @@
           },
           {
             "result": {
-              "duration": 7337842900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 103,
             "name": "Patient Enter the DOB into DOB field",
@@ -1022,8 +1004,8 @@
           },
           {
             "result": {
-              "duration": 2106747800,
-              "status": "passed"
+              "duration": 998400,
+              "status": "skipped"
             },
             "line": 104,
             "name": "Patient click to verify button",
@@ -1034,8 +1016,7 @@
           },
           {
             "result": {
-              "duration": 3008325700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 105,
             "name": "Patient should navigate to Patient Registration Page",
@@ -1047,7 +1028,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:14:32.192Z",
+        "start_timestamp": "2024-12-31T04:48:10.859Z",
         "line": 108,
         "name": "Patient was entering the Patient Information details",
         "description": "",
@@ -1057,8 +1038,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4449118700,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\n*** Element info: {Using\u003dxpath, value\u003d//button[.\u003d\"Next\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.patient_entering_patient_ssn_and_address(StepDefinition.java:1368)\r\n\tat ✽.patient entering patient SSN and Address(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:109)\r\n",
+              "duration": 2022027900,
+              "status": "failed"
             },
             "line": 109,
             "name": "patient entering patient SSN and Address",
@@ -1069,8 +1051,7 @@
           },
           {
             "result": {
-              "duration": 5295388400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 110,
             "name": "Patient entering city and Select state from the dropdown",
@@ -1081,8 +1062,7 @@
           },
           {
             "result": {
-              "duration": 4414039400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 111,
             "name": "Patient entering Zipcode and Modify the Phone and Email",
@@ -1093,8 +1073,7 @@
           },
           {
             "result": {
-              "duration": 19928980500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 112,
             "name": "Select is patient a minor radio button",
@@ -1105,8 +1084,7 @@
           },
           {
             "result": {
-              "duration": 10488238100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 113,
             "name": "Patient click the same As checkbox  and unchecked up the sameAs checkbox",
@@ -1117,8 +1095,8 @@
           },
           {
             "result": {
-              "duration": 28917830700,
-              "status": "passed"
+              "duration": 999500,
+              "status": "skipped"
             },
             "line": 114,
             "name": "Patient entering Parent or Legal Guardian information",
@@ -1129,8 +1107,7 @@
           },
           {
             "result": {
-              "duration": 10614471800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 115,
             "name": "Patient select the insurance information radio button",
@@ -1141,8 +1118,7 @@
           },
           {
             "result": {
-              "duration": 7740266300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 116,
             "name": "Entering Patient Insurance information details",
@@ -1153,8 +1129,7 @@
           },
           {
             "result": {
-              "duration": 2605227100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 117,
             "name": "User checkedUp the confirm this information is accurate checkbox",
@@ -1165,8 +1140,7 @@
           },
           {
             "result": {
-              "duration": 889414700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 118,
             "name": "patient entering digital signature",
@@ -1177,8 +1151,7 @@
           },
           {
             "result": {
-              "duration": 3117068700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 119,
             "name": "Patient moved to next form tab by clicking the next button",
@@ -1189,8 +1162,7 @@
           },
           {
             "result": {
-              "duration": 3932039500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 120,
             "name": "User Entering the Digital signature",
@@ -1201,8 +1173,7 @@
           },
           {
             "result": {
-              "duration": 6235761700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 121,
             "name": "Click the Prev button to check the Patient Informations",
@@ -1213,8 +1184,8 @@
           },
           {
             "result": {
-              "duration": 3132384000,
-              "status": "passed"
+              "duration": 999700,
+              "status": "skipped"
             },
             "line": 122,
             "name": "Click the Proceed to Pay to redirected to payment Page",
@@ -1225,8 +1196,7 @@
           },
           {
             "result": {
-              "duration": 20916820200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 123,
             "name": "User Enter payment card details",
@@ -1237,8 +1207,7 @@
           },
           {
             "result": {
-              "duration": 4305367000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 124,
             "name": "User click the Pay button",
@@ -1249,8 +1218,7 @@
           },
           {
             "result": {
-              "duration": 25096422700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 125,
             "name": "Patient should navigate the Payment Status page",
@@ -1262,7 +1230,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:17:14.306Z",
+        "start_timestamp": "2024-12-31T04:48:12.902Z",
         "line": 128,
         "name": "Admin Login the Application to verify the Patient payment transaction was successed",
         "description": "",
@@ -1272,8 +1240,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1635304800,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\n*** Element info: {Using\u003dxpath, value\u003d//a[@title\u003d\"Manage Payments\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.user_navigated_to_manage_payment_menu(StepDefinition.java:1615)\r\n\tat ✽.User navigated to Manage payment Menu(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:129)\r\n",
+              "duration": 1529845800,
+              "status": "failed"
             },
             "line": 129,
             "name": "User navigated to Manage payment Menu",
@@ -1284,8 +1253,8 @@
           },
           {
             "result": {
-              "duration": 32982300,
-              "status": "passed"
+              "duration": 999100,
+              "status": "skipped"
             },
             "line": 130,
             "name": "User click the Manage Payment Menu",
@@ -1296,8 +1265,7 @@
           },
           {
             "result": {
-              "duration": 10490574300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 131,
             "name": "User pick the From date and To date from the Date Picker",
@@ -1308,8 +1276,7 @@
           },
           {
             "result": {
-              "duration": 7368280200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 132,
             "name": "User filtering the Payment list by using Date Range filter",
@@ -1320,8 +1287,7 @@
           },
           {
             "result": {
-              "duration": 16614916900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 133,
             "name": "User Click the Search button to filter the data",
@@ -1332,8 +1298,7 @@
           },
           {
             "result": {
-              "duration": 24078379200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 134,
             "name": "User Click the Reset button to get all the datas",
@@ -1344,8 +1309,7 @@
           },
           {
             "result": {
-              "duration": 57289728300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 135,
             "name": "User flitering the data by using Quick search options",
@@ -1356,8 +1320,7 @@
           },
           {
             "result": {
-              "duration": 2130217400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 136,
             "name": "User Click the Payment receipt download icon",
@@ -1368,8 +1331,7 @@
           },
           {
             "result": {
-              "duration": 4513680500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 137,
             "name": "User Exporting the payment lists to Excel and PDF file",
@@ -1381,7 +1343,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:19:18.469Z",
+        "start_timestamp": "2024-12-31T04:48:14.458Z",
         "line": 140,
         "name": "User Check the Patient Census Lists in Census List Menu",
         "description": "",
@@ -1391,8 +1353,9 @@
         "steps": [
           {
             "result": {
-              "duration": 5185921200,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\n*** Element info: {Using\u003dxpath, value\u003d//span[.\u003d\"Census List\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.user_click_census_list_menu_to_redirected_to_census_list_page(StepDefinition.java:1802)\r\n\tat ✽.User click Census List Menu to redirected to Census List Page(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:141)\r\n",
+              "duration": 3023173500,
+              "status": "failed"
             },
             "line": 141,
             "name": "User click Census List Menu to redirected to Census List Page",
@@ -1403,8 +1366,7 @@
           },
           {
             "result": {
-              "duration": 33412085100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 142,
             "name": "User flitering the Pending Census data by using Quick search options",
@@ -1415,8 +1377,8 @@
           },
           {
             "result": {
-              "duration": 6740766700,
-              "status": "passed"
+              "duration": 999300,
+              "status": "skipped"
             },
             "line": 143,
             "name": "User click the Edit Status icon in the Grid list",
@@ -1427,8 +1389,8 @@
           },
           {
             "result": {
-              "duration": 4356742500,
-              "status": "passed"
+              "duration": 999400,
+              "status": "skipped"
             },
             "line": 144,
             "name": "User change the Patient Status From the dropdown",
@@ -1439,8 +1401,7 @@
           },
           {
             "result": {
-              "duration": 5021909300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 145,
             "name": "User click Update button to change the Patient Status",
@@ -1451,8 +1412,8 @@
           },
           {
             "result": {
-              "duration": 2168792900,
-              "status": "passed"
+              "duration": 1001300,
+              "status": "skipped"
             },
             "line": 146,
             "name": "User check the Changed Patient data moved to completed Grid list",
@@ -1463,8 +1424,8 @@
           },
           {
             "result": {
-              "duration": 34947113800,
-              "status": "passed"
+              "duration": 995800,
+              "status": "skipped"
             },
             "line": 147,
             "name": "User flitering the Completed Census data by using Quick search options",
@@ -1475,8 +1436,7 @@
           },
           {
             "result": {
-              "duration": 12607967600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 148,
             "name": "User Exporting the Census lists to Excel and PDF file",
@@ -1488,7 +1448,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-12-30T10:21:02.923Z",
+        "start_timestamp": "2024-12-31T04:48:17.517Z",
         "line": 150,
         "name": "User can change the Password by themselves",
         "description": "",
@@ -1498,8 +1458,9 @@
         "steps": [
           {
             "result": {
-              "duration": 5169482700,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d131.0.6778.205)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MPI-CPU-037\u0027, ip: \u0027192.168.10.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\\Users\\surya\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e04973d5170cdc33a858ce581cc976e2\n*** Element info: {Using\u003dxpath, value\u003d//a[@title\u003d\u0027Settings\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat com.cirqueBaseClass.BaseClass.click(BaseClass.java:131)\r\n\tat com.stepDefinition.StepDefinition.user_click_settings_menu_to_redirected_to_change_password_page(StepDefinition.java:2001)\r\n\tat ✽.User click Settings menu to redirected to Change Password Page(file:///C:/Users/surya/eclipse-workspace/Cirque/src/test/java/com/featureFile/Cirque.feature:151)\r\n",
+              "duration": 3033387800,
+              "status": "failed"
             },
             "line": 151,
             "name": "User click Settings menu to redirected to Change Password Page",
@@ -1510,8 +1471,8 @@
           },
           {
             "result": {
-              "duration": 11750588200,
-              "status": "passed"
+              "duration": 999100,
+              "status": "skipped"
             },
             "line": 152,
             "name": "User click entering Old Password into Old Password field",
@@ -1522,8 +1483,7 @@
           },
           {
             "result": {
-              "duration": 9556405600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 153,
             "name": "User entering the New Password into New Password Field",
@@ -1534,8 +1494,7 @@
           },
           {
             "result": {
-              "duration": 9433127000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 154,
             "name": "User entering the Confirm New Password into Confirm New Password Field",
@@ -1546,8 +1505,8 @@
           },
           {
             "result": {
-              "duration": 5335367700,
-              "status": "passed"
+              "duration": 1000900,
+              "status": "skipped"
             },
             "line": 155,
             "name": "User check the New and Confirm New Password field with invalid input",
@@ -1558,8 +1517,7 @@
           },
           {
             "result": {
-              "duration": 6212907400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 156,
             "name": "User check the New and Confirm New Password field with valid input",
@@ -1570,8 +1528,8 @@
           },
           {
             "result": {
-              "duration": 16148461500,
-              "status": "passed"
+              "duration": 996400,
+              "status": "skipped"
             },
             "line": 157,
             "name": "User check the Confirmation Popup is presented",
@@ -1582,8 +1540,7 @@
           },
           {
             "result": {
-              "duration": 24981700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 158,
             "name": "User check the successfully logged out from the Application after click the ok button",
@@ -1594,8 +1551,7 @@
           },
           {
             "result": {
-              "duration": 7856615500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 159,
             "name": "User verify the Login with old password",
@@ -1606,8 +1562,7 @@
           },
           {
             "result": {
-              "duration": 11416356800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 160,
             "name": "User verify the login with newly changed Password",
@@ -1618,8 +1573,7 @@
           },
           {
             "result": {
-              "duration": 13389251000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 161,
             "name": "User should be logged in to Application",
